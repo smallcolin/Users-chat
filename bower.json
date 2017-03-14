@@ -1,0 +1,20 @@
+{
+  "name": "Users-chat",
+  "homepage": "https://github.com/isak16/Users-chat",
+  "authors": [
+    "jakobjohansson <jakobjohansson2@icloud.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
