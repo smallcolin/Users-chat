@@ -5,25 +5,24 @@
     <title>Users chatt</title>
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 </head>
 <body>
-
 <div ng-controller="sidenavController" layout="column" class="sidenav-container" ng-cloak>
     <section layout="row" flex>
         <md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop="false" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-sm')">
 
             <md-toolbar layout="column" class="md-tall messages-header">
-                <img src="images/unicorn.svg" width="20%" alt="">
+                <img src="images/unicorn.svg" alt="">
                 <p flex style="text-align: center;">Users Chatt</p>
             </md-toolbar>
-
-
 
             <md-content>
                 <section>
                     <md-subheader class="md-primary">Messages</md-subheader>
                     <md-list>
-                        <md-list-item class="md-2-line" ng-repeat="message in messages" ng-click="null">
+                        <md-list-item class="md-2-line" ng-repeat="message in messages" ng-click="openMenu();">
                             <img ng-src="{{message.profileImg}}" class="md-avatar" alt="{{message.who}}">
                             <div class="md-list-item-text">
                                 <h3>{{message.from}}</h3>
@@ -40,9 +39,11 @@
         <md-content flex>
             <md-toolbar layout="row">
                 <div class="md-toolbar-tools">
+                    <md-icon hide show-sm show-xs ng-click="openMenu();"><i class="material-icons">arrow_back</i></md-icon>
+
                     <p flex style="text-align: center;">Sebastian Thorsen</p></div>
+                <md-icon class="md-icon" style="margin-right: 15px;">settings</md-icon>
             </md-toolbar>
-            <button type="button" ng-click="openMenu();">asdasdas</button>
         </md-content>
     </section>
 </div>

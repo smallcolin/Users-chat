@@ -142,5 +142,4 @@ app.controller('sidenavController', function ($scope, $timeout, $mdSidenav) {
         $mdSidenav('left').toggle();
     }
 
-
-    });
+});

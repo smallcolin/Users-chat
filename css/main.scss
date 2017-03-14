@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 $standard-font: 'Roboto', sans-serif;
+$screen-sm: 960px;
 
 .sidenav-container{
   height: 100%;
@@ -34,3 +35,13 @@ md-list-item{
   height: 75%;
   margin-top: 16px;
 }
+
+@media only screen and (max-width: $screen-sm) {
+
+  .md-sidenav-left{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+}
+
