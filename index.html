@@ -7,16 +7,31 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <title>Chat</title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         html, body, .app-window, .set-height, .sidebar, .chat-window {
             height: 100%;
         }
 
         .sidebar, .chat-window {
             overflow-y: scroll;
+            position: relative;
         }
 
         .sidebar {
             border-right: 1px solid #eee;
+        }
+
+        .from-current {
+            text-align: right;
+        }
+
+        .messages article {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -35,6 +50,7 @@
                                 <p class="list-group-item-text">sup dude</p>
                             </a>
                             <a href="#" class="list-group-item">
+                                <span class="badge">4</span>
                                 <h4 class="list-group-item-heading">#programming</h4>
                                 <p class="list-group-item-text">NEED HELP!!</p>
                             </a>
@@ -47,13 +63,38 @@
                                 <p class="list-group-item-text">blablabla jag är chef blabla</p>
                             </a>
                             <a href="#" class="list-group-item">
+                                <span class="badge">13</span>
                                 <h4 class="list-group-item-heading">#general</h4>
                                 <p class="list-group-item-text">spamspamspam</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8 chat-window"></div>
+                <div class="col-sm-8 chat-window">
+                    <div class="page-header text-right">
+                        <h2>@buqoaj</h2>
+                    </div>
+                    <div class="messages">
+                        <article class="from-current">
+                            <div class="avatar bubble no-img">
+                                <span>yo man</span>
+                                <span class="badge">@you</span>
+                            </div>
+                        </article>
+                        <article class="from-current">
+                            <div class="avatar bubble no-img">
+                                <span>you there?</span>
+                                <span class="badge">@you</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="avatar bubble no-img">
+                                <span class="badge">@baquaj</span>
+                                <span class="msg">sup dude</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
