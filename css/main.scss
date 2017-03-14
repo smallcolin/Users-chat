@@ -9,13 +9,22 @@ $standard-font: 'Roboto', sans-serif;
 .sidenav-container md-sidenav{
   overflow: hidden;
 }
-
+.messages-header{
+  img{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+}
 
 md-list-item{
   img{
-    margin-top: 16px !important;
+    width: 49px !important;
+    height: auto !important;
   }
-  .md-list-item-text p{
+  .preview-message{
+    display: inline;
     white-space: nowrap;
     overflow:hidden;
     text-overflow: ellipsis;
