@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$standard-font: 'Roboto', sans-serif;
+
+.sidenav-container{
+  height: 100%;
+  font-family: $standard-font;
+
+}
+.sidenav-container md-sidenav{
+  overflow: hidden;
+}
+
+
+md-list-item{
+  img{
+    margin-top: 16px !important;
+  }
+  .md-list-item-text p{
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+  }
+}
+.header-image{
+  height: 75%;
+  margin-top: 16px;
+}
