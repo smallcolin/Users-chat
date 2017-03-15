@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.sidenav-container {
+  height: 100%;
+  font-family: "Roboto", sans-serif; }
+
+.sidenav-container md-sidenav {
+  overflow: hidden; }
+
+.messages-header img {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px; }
+
+md-list-item img {
+  width: 49px !important;
+  height: auto !important; }
+md-list-item .preview-message {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.header-image {
+  height: 75%;
+  margin-top: 16px; }
+
+@media only screen and (max-width: 960px) {
+  .md-sidenav-left {
+    width: 100% !important;
+    max-width: 100% !important; } }
+
+/*# sourceMappingURL=main.css.map */

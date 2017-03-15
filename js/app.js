@@ -138,6 +138,141 @@ app.controller('sidenavController', function ($scope, $timeout, $mdSidenav) {
         }
     ];
 
+    $scope.messages2 = [
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        },
+        {
+            profileImg : imagePath,
+            from: "Sebastian Thorsen",
+            time: '13:36',
+            notes: "Weeeew lad, you be fly af duuuuuuuuuuuuude, lmao xd xdxdx "
+        }
+    ];
+
     $scope.openMenu = function () {
         $mdSidenav('left').toggle();
     }
