@@ -25,6 +25,18 @@ html, body, .app-window, .set-height, .sidebar, .chat-window {
     margin-bottom: 10px;
 }
 
+    .messages article span.author {
+        display:block;
+    }
+
+    .messages .content {
+        display: inline-block;
+        background-color: #eee;
+        padding: 5px 10px;
+        border-radius: 8px;
+        max-width: 80%;
+    }
+
 .optionbar {
     color: #939393;
 }
