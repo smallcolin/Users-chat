@@ -24,3 +24,7 @@ html, body, .app-window, .set-height, .sidebar, .chat-window {
 .messages article {
     margin-bottom: 10px;
 }
+
+.optionbar {
+    color: #939393;
+}

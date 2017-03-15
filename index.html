@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <title>Chat</title>
@@ -12,38 +13,43 @@
     <section class="app-window">
         <div class="container set-height">
             <div class="row set-height">
-                <div class="col-sm-3 sidebar">
-                    <div class="page-header">
+                <div class="col-sm-4 sidebar">
+                    <div class="page-header text-right">
                         <h2>active rooms</h2>
                     </div>
-                    <div class="room-entries">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item active">
-                                <h4 class="list-group-item-heading">@buqoaj</h4>
-                                <p class="list-group-item-text">sup dude</p>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <span class="badge">4</span>
-                                <h4 class="list-group-item-heading">#programming</h4>
-                                <p class="list-group-item-text">NEED HELP!!</p>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <h4 class="list-group-item-heading">#cats</h4>
-                                <p class="list-group-item-text">Look at this mfaka</p>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <h4 class="list-group-item-heading">@erik</h4>
-                                <p class="list-group-item-text">blablabla jag är chef blabla</p>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <span class="badge">13</span>
-                                <h4 class="list-group-item-heading">#general</h4>
-                                <p class="list-group-item-text">spamspamspam</p>
-                            </a>
+                    <div class="row">
+                        <div class="col-sm-3 optionbar text-right">
+                            <i class="fa fa-3x fa-cog" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-sm-9 room-entries">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">
+                                    <h4 class="list-group-item-heading">@buqoaj</h4>
+                                    <p class="list-group-item-text">sup dude</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="badge">4</span>
+                                    <h4 class="list-group-item-heading">#programming</h4>
+                                    <p class="list-group-item-text">NEED HELP!!</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">#cats</h4>
+                                    <p class="list-group-item-text">Look at this mfaka</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">@erik</h4>
+                                    <p class="list-group-item-text">blablabla jag är chef blabla</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="badge">13</span>
+                                    <h4 class="list-group-item-heading">#general</h4>
+                                    <p class="list-group-item-text">spamspamspam</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8 chat-window">
+                <div class="col-sm-7 chat-window">
                     <div class="page-header text-right">
                         <h2>@buqoaj</h2>
                     </div>
