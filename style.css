@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body, .app-window, .set-height, .sidebar, .chat-window {
+    height: 100%;
+}
+
+.sidebar, .chat-window {
+    overflow-y: scroll;
+    position: relative;
+}
+
+.sidebar {
+    border-right: 1px solid #eee;
+}
+
+.from-current {
+    text-align: right;
+}
+
+.messages article {
+    margin-bottom: 10px;
+}
