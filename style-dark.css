@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background: #363636;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body, .app-window, .set-height, .sidebar, .chat-window {
+    height: 100%;
+    color: white;
+}
+
+.sidebar, .chat-window {
+
+
+    position: relative;
+}
+.page-header {
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.border-light {
+    position: absolute;
+    border-bottom: 1px solid #515050;
+    padding-top: 53px;
+    display: block;
+    width: 100%;
+
+}
+
+.list-group a:hover {
+    color: white;
+    background: #4c4c4c;
+    border: solid 1px black;
+}
+.list-group-item.active, .list-group-item.active:hover  {
+    background: #4c4c4c;
+    border: solid 1px black;
+}
+
+.list-group a {
+    color: white;
+    background: #2d2d2d;
+    border: solid 1px black;
+}
+.list-group a h4 {
+    color: white !important;
+}
+
+
+.chat-window {
+    overflow-y: scroll;
+}
+
+.sidebar {
+    color: white;
+    border-right: 1px solid black;
+    outline: 1px solid #515050;
+}
+
+.from-current {
+    text-align: right;
+}
+
+.messages article {
+    margin-bottom: 10px;
+}
+.sidebar {
+    position: relative;
+}
+.optionbar {
+    color: white;
+    bottom: 0;
+}
+
+    .optionbar i {
+        display:inline-block;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+        .optionbar i:hover {
+            color: #337ab7;
+        }
+
+.login .content-wrap {
+    margin-top: 200px;
+}
+
+    .login .register-tab {
+        margin-top: 40px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.4s linear;
+
+    }
