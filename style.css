@@ -28,3 +28,24 @@ html, body, .app-window, .set-height, .sidebar, .chat-window {
 .optionbar {
     color: #939393;
 }
+    
+    .optionbar i {
+        display:block;
+        margin-bottom: 10px;
+    }
+
+        .optionbar i:hover {
+            color: #337ab7;
+        }
+
+.login .content-wrap {
+    margin-top: 200px;
+}
+    
+    .login .register-tab {
+        margin-top: 40px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.4s linear;
+
+    }

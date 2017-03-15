@@ -13,56 +13,49 @@
     <section class="login">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="page-header">
-                        <h1>Unicorn Super Epic Rocket Science Chat</h1>
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="content-wrap">
+                        <h2>Unicorn</h2>
+                        <form class="form" name="login-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="username">Username / Email address</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Username / Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <a href="#" onclick="openRegisterTab()">Haven't got an account?</a>
+                        <div class="register-tab">
+                            <form class="form" name="register-form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="email"></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-success">Register</button>
+                            </form>
+                        </div>
                     </div>
-                    <h2>Sign in</h2>
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="exampleInputPassword3">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Remember me
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </form>
-                    <h2>Or register here</h2>
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label">Username</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="username" placeholder="Username">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="col-sm-2 control-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-primary">Register</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+               </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function openRegisterTab() {
+            document.getElementsByClassName("register-tab")[0].style.visibility = "visible";
+            document.getElementsByClassName("register-tab")[0].style.opacity = 1;
+        }
+    </script>
 </body>
 </html>
