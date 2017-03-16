@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/isak16/Users-chat/issues"
   },
-  "homepage": "https://github.com/isak16/Users-chat#readme"
+  "homepage": "https://github.com/isak16/Users-chat#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
