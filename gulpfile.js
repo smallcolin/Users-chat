@@ -1,10 +1,16 @@
 var concat = require('gulp-concat'),
-	sass = rewuire('gulp-sass')
+	sass = require('gulp-sass')
 	gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	ngAnnotate = require('gulp-ng-annotate');
 
-gulp.task('ngAnnotate', function (){
-
+gulp.task('sass', function () {
+	  return gulp.src('./assets/scss/*.scss')
+    	.pipe(sass.sync().on('error', sass.logError))
+    	.pipe(gulp.dest('./assets/css'));
 });
+gulp.task('watch', function () {
+  gulp.watch('./assets/scss/*.scss', ['sass']);
+});
+gulp.task('default', ['sass', 'watch']);
