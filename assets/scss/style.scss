@@ -1,4 +1,9 @@
-@import 'variables';
+@import '_variables';
+@import '_sidebar';
+@import '_main';
+@import '_login';
+@import '_header';
+@import '_profile';
 
 body {
 	font-family: $primaryFont;
