@@ -6,7 +6,7 @@ var concat = require('gulp-concat'),
 	ngAnnotate = require('gulp-ng-annotate');
 
 gulp.task('sass', function () {
-	  return gulp.src('./assets/scss/*.scss')
+	  return gulp.src('./assets/scss/style.scss')
     	.pipe(sass.sync().on('error', sass.logError))
     	.pipe(gulp.dest('./assets/css'));
 });
