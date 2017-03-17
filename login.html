@@ -8,26 +8,25 @@
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body class="login">
+<body class="app-login">
    <div class="container-fluid">
        <div class="row">
-            <div class="col-xs-12 upper-decoration"></div>
+            <div class="col-xs-12 login-header"></div>
        </div>
        <div class="row">
             <div class="col-sm-8 col-sm-offset-2 login-window">
                 <h1>Login now</h1>
                 <h2>To explore this shizzle</h2>
                 <form class="form-inline login-form">
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail3">Username</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Username">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputPassword3">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-                  </div>
-
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                    <div class="form-group">
+                        <label class="sr-only" for="username">Username</label>
+                        <input type="email" class="form-control" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
                 </form>
             </div>
        </div>

@@ -5,9 +5,18 @@ $tertriaryLoginBg: #fff;
 $primaryLoginText: #95989A;
 
 
-.login {
+.app-login {
     background-color: $primaryLoginBg;
     color: $primaryLoginText;
+
+    .login-header {
+        background-image: url('../img/login-deco.png');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center center;
+        min-height: 527px;
+        z-index: 10;
+    }
 
     .login-window {
         background-color: $tertriaryLoginBg;
@@ -19,14 +28,5 @@ $primaryLoginText: #95989A;
         .login-form {
             z-index: 20;
         }
-    }
-
-    .upper-decoration {
-        background-image: url('../img/login-deco.png');
-        background-repeat: no-repeat;
-        background-size: cover; 
-        background-position: center center;
-        min-height: 527px;
-        z-index: 10;
     }
 }

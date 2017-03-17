@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
-.login {
+.app-login {
   background-color: #008CED;
   color: #95989A; }
-  .login .login-window {
-    background-color: #fff;
-    margin-top: -300px;
-    padding-top: 180px;
-    padding-bottom: 20px;
-    text-align: center; }
-    .login .login-window .login-form {
-      z-index: 20; }
-  .login .upper-decoration {
+  .app-login .login-header {
     background-image: url("../img/login-deco.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     min-height: 527px;
     z-index: 10; }
+  .app-login .login-window {
+    background-color: #fff;
+    margin-top: -300px;
+    padding-top: 180px;
+    padding-bottom: 20px;
+    text-align: center; }
+    .app-login .login-window .login-form {
+      z-index: 20; }
 
 body {
   font-family: "Roboto", sans-serif; }
