@@ -1,0 +1,32 @@
+$primaryLoginBg: #008CED;
+$secondaryLoginBg: #008CED;
+$tertriaryLoginBg: #fff;
+
+$primaryLoginText: #95989A;
+
+
+.login {
+    background-color: $primaryLoginBg;
+    color: $primaryLoginText;
+
+    .login-window {
+        background-color: $tertriaryLoginBg;
+        margin-top: -300px;
+        padding-top: 180px;
+        padding-bottom: 20px;
+        text-align: center;
+
+        .login-form {
+            z-index: 20;
+        }
+    }
+
+    .upper-decoration {
+        background-image: url('../img/login-deco.png');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center center;
+        min-height: 527px;
+        z-index: 10;
+    }
+}
