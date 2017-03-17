@@ -2,6 +2,11 @@
 .app-login {
   background-color: #008CED;
   color: #95989A; }
+  .app-login h1 {
+    font-weight: 400;
+    font-size: 40px; }
+  .app-login h2 {
+    font-weight: 300; }
   .app-login .login-header {
     background-image: url("../img/login-deco.png");
     background-repeat: no-repeat;
@@ -14,9 +19,18 @@
     margin-top: -300px;
     padding-top: 180px;
     padding-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 4px; }
     .app-login .login-window .login-form {
       z-index: 20; }
+      .app-login .login-window .login-form .login-button {
+        display: block;
+        margin: 10px auto;
+        padding: 15px 70px;
+        border-radius: 10px;
+        background-color: #008CED;
+        border: none;
+        color: #fff; }
 
 body {
   font-family: "Roboto", sans-serif; }

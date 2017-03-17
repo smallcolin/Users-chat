@@ -3,11 +3,20 @@ $secondaryLoginBg: #008CED;
 $tertriaryLoginBg: #fff;
 
 $primaryLoginText: #95989A;
-
+$secondaryLoginText: #fff;
 
 .app-login {
     background-color: $primaryLoginBg;
     color: $primaryLoginText;
+
+    h1 {
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-weight: 300;
+    }
 
     .login-header {
         background-image: url('../img/login-deco.png');
@@ -24,9 +33,20 @@ $primaryLoginText: #95989A;
         padding-top: 180px;
         padding-bottom: 20px;
         text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 0 4px;
 
         .login-form {
             z-index: 20;
+
+            .login-button {
+                display: block;
+                margin: 10px auto;
+                padding: 15px 70px;
+                border-radius: 10px;
+                background-color: $primaryLoginBg;
+                border: none;
+                color: $secondaryLoginText;
+            }
         }
     }
 }
