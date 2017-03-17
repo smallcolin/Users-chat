@@ -1,2 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+section.chatSection {
+  height: 1600px;
+  background-color: #2C2C29; }
+  section.chatSection div.pmContainerLeft {
+    background-color: #1F1F1D;
+    color: white;
+    float: left;
+    padding: 15px 20px 6px 20px;
+    margin: 10px 5px;
+    border-radius: 20px;
+    display: inline-block; }
+  section.chatSection div.pmContainerRight {
+    background-color: #1F1F1D;
+    float: right;
+    color: white;
+    margin: 10px 5px;
+    padding: 15px 20px 6px 20px;
+    border-radius: 20px;
+    display: inline-block; }
+  section.chatSection img.left {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin: 10px 5px;
+    border-radius: 30px; }
+  section.chatSection img.right {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+    margin: 10px 5px;
+    border-radius: 30px; }
+  section.chatSection img.online {
+    box-shadow: 0px 0px 4px #00FF11; }
+  section.chatSection img.offline {
+    box-shadow: 0px 0px 2px 1px #e5001d; }
+  section.chatSection img.busy {
+    box-shadow: 0px 0px 2px 1px #ff5000; }
+  section.chatSection .PMSection {
+    border-top: solid 2px #1F1F1D;
+    padding: 18px 10px 20px 10px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom: solid 2px #1F1F1D; }
+    section.chatSection .PMSection input {
+      width: 85%;
+      height: 50px;
+      border-radius: 15px;
+      padding-left: 10px;
+      margin-right: 10px;
+      margin-left: 10px; }
+    section.chatSection .PMSection a {
+      font-size: 40px;
+      display: inline-block;
+      margin-left: 10px;
+      color: white; }
+
 body {
   font-family: "Roboto", sans-serif; }

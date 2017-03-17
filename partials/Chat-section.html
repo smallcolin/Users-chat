@@ -9,15 +9,26 @@
 <body>
 	<section ng-controller="chatSection" class="chatSection">
 		<div class="container-fluid">
-			<div class="row" ng-repeat="n in testChat">
+			<div class="row chatContainer" ng-repeat="n in testChat">
 				<div class="col-xs-12" ng-if="n.author == 'other'">
-					<p>{{n.message}}</p>
+					<img src="{{n.image}}" class="left {{n.status}}"><div class="pmContainerLeft"><p>{{n.message}}</p></div>
 				</div>
 				<div class="col-xs-12 text-right" ng-if="n.author == 'you'">
-					<p>{{n.message}}</p>
+					<img src="{{n.image}}" class="right {{n.status}}">
+					<div class="pmContainerRight"><p>{{n.message}}</p></div>
 				</div>
 			</div>
+			<ng-form>
+				<div class="row PMSection">
+					<div class="col-xs-12 ">
+							<input type="message" name="SendPM" placeholder="Write a message">
+							<a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-smile-o" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</ng-form>
 		</div>
+		
 	</section>
 </body>
 <script src="../bower_components/jquery/dist/jquery.js"></script>

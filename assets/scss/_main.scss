@@ -1,0 +1,78 @@
+section.chatSection {
+	height: 1600px;
+	background-color: $primaryBgColor;
+
+	div.pmContainerLeft {
+		background-color: $primaryDividerColor;
+		color: white;
+		float: left;
+		padding: 15px 20px 6px 20px;
+		margin: 10px 5px;
+		border-radius: 20px;
+		display: inline-block;
+	}
+	div.pmContainerRight {
+		background-color: $primaryDividerColor;
+		float: right;
+		color: white;
+		margin: 10px 5px;
+		padding: 15px 20px 6px 20px;
+		border-radius: 20px;
+		display: inline-block;
+	}
+	img.left {
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		float: left;
+		margin: 10px 5px;
+		border-radius: 30px;
+	}
+	img.right {
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		float: right;
+		margin: 10px 5px;
+		border-radius: 30px;
+	}
+
+	img.online {
+		box-shadow: 0px 0px 4px $primaryUserOnlineColor;
+	}
+	img.offline {
+		box-shadow: 0px 0px 2px 1px #e5001d;
+	}
+	img.busy {
+		box-shadow: 0px 0px 2px 1px #ff5000;
+	}
+	
+	.PMSection {
+		border-top: solid 2px $primaryDividerColor;
+		padding: 18px 10px 20px 10px;
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		border-bottom: solid 2px $primaryDividerColor;
+
+
+		input {
+			width: 85%;
+			height: 50px;
+			border-radius: 15px;
+			padding-left: 10px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		a {
+			font-size: 40px;
+			display: inline-block;
+			margin-left: 10px;
+			color: white;
+
+
+		}
+	}
+
+}
