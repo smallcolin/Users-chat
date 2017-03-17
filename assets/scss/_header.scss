@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#sidenav-body{
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar-wrapper{
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 413px;
+  overflow-y: hidden;
+  background-color: $primaryBgColor;
+
+  -webkit-box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
+  box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
+}
+
+.sidebar-brand{
+  background-color: $primaryAccentColor;
+  height: 185px;
+}
+
+.brand-text-and-logo{
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  padding-top: 43px;
+  img{
+    width: 99px;
+    height: 99px;
+    vertical-align:middle
+  }
+  span{
+    padding-left: 22px;
+    font-family: $primaryFont;
+    font-size: 37px;
+    color: white;
+  }
+}
+.sidebar-profile-section{
+    img{
+      margin-top: 13px;
+      margin-left: 27px;
+      height: 78px;
+      width: 78px;
+      border-radius: 50%;
+    }
+}
