@@ -5,7 +5,7 @@
   .app-login h1 {
     font-weight: 400;
     font-size: 40px; }
-  .app-login h2 {
+  .app-login h2, .app-login h3 {
     font-weight: 300; }
   .app-login .login-header {
     background-image: url("../img/login-deco.png");
@@ -21,16 +21,18 @@
     padding-bottom: 20px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 4px; }
-    .app-login .login-window .login-form {
+    .app-login .login-window .login-button, .app-login .login-window .register-button {
+      display: block;
+      margin: 10px auto;
+      padding: 15px 70px;
+      border-radius: 10px;
+      background-color: #008CED;
+      border: none;
+      color: #fff; }
+    .app-login .login-window #login-form {
       z-index: 20; }
-      .app-login .login-window .login-form .login-button {
-        display: block;
-        margin: 10px auto;
-        padding: 15px 70px;
-        border-radius: 10px;
-        background-color: #008CED;
-        border: none;
-        color: #fff; }
+    .app-login .login-window #app-register {
+      display: none; }
 
 body {
   font-family: "Roboto", sans-serif; }

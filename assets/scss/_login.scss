@@ -14,7 +14,7 @@ $secondaryLoginText: #fff;
         font-size: 40px;
     }
 
-    h2 {
+    h2, h3 {
         font-weight: 300;
     }
 
@@ -35,18 +35,21 @@ $secondaryLoginText: #fff;
         text-align: center;
         box-shadow: rgba(0, 0, 0, 0.4) 0 0 4px;
 
-        .login-form {
-            z-index: 20;
-
-            .login-button {
-                display: block;
-                margin: 10px auto;
-                padding: 15px 70px;
-                border-radius: 10px;
-                background-color: $primaryLoginBg;
-                border: none;
-                color: $secondaryLoginText;
-            }
+        .login-button, .register-button {
+            display: block;
+            margin: 10px auto;
+            padding: 15px 70px;
+            border-radius: 10px;
+            background-color: $primaryLoginBg;
+            border: none;
+            color: $secondaryLoginText;
         }
+
+        .register-button {
+
+        }
+        
+        #login-form {z-index: 20;}
+        #app-register {display: none;}
     }
 }
