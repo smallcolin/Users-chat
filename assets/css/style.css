@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
-<<<<<<< HEAD
 section.chatSection {
   height: 1600px;
   background-color: #2C2C29; }
@@ -59,7 +58,33 @@ section.chatSection {
       display: inline-block;
       margin-left: 10px;
       color: white; }
-=======
+
+section.newsSection {
+  background-color: #2C2C29; }
+  section.newsSection .newsContainer {
+    height: 80px;
+    border-bottom: 2px solid #1F1F1D;
+    border-top: 2px solid #1F1F1D; }
+    section.newsSection .newsContainer img.profileImage {
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      float: left;
+      margin: 10px 5px;
+      border-radius: 30px; }
+    section.newsSection .newsContainer img.online {
+      box-shadow: 0px 0px 4px #00FF11; }
+    section.newsSection .newsContainer img.offline {
+      box-shadow: 0px 0px 2px 1px #e5001d; }
+    section.newsSection .newsContainer img.busy {
+      box-shadow: 0px 0px 2px 1px #ff5000; }
+    section.newsSection .newsContainer p {
+      color: white;
+      margin-top: 25px;
+      margin-right: 40px; }
+      section.newsSection .newsContainer p span {
+        color: #95989A; }
+
 .app-login {
   background-color: #008CED;
   color: #95989A; }
@@ -94,7 +119,6 @@ section.chatSection {
       z-index: 20; }
     .app-login .login-window #app-register {
       display: none; }
->>>>>>> adc018a761c24b4336ed52162024b7dbcf81f879
 
 body {
   font-family: "Roboto", sans-serif; }
