@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Oskars skit</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<section ng-controller="chatSection" class="chatSection">
+		<div class="container-fluid">
+			<div class="row" ng-repeat="n in testChat">
+				<div class="col-xs-12" ng-if="n.author == 'other'">
+					<p>{{n.message}}</p>
+				</div>
+				<div class="col-xs-12 text-right" ng-if="n.author == 'you'">
+					<p>{{n.message}}</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.js"> </script>
+<script src="assets/js/scripts-oskar.js"></script>
+</html>
