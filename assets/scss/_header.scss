@@ -18,7 +18,12 @@
 #sidebar-wrapper{
   border-collapse:collapse;
   display : table;
-
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
   z-index: 1;
   position: absolute;
   height: 100%;
@@ -73,18 +78,20 @@
     p{
       font-size: 16px;
     }
+    a{
+      position: absolute;
+      right: 26px;
+      top:210px;
+    }
   }
 }
 
-.sidebar-icons{
+.sidebar-bottom-icons{
   display : table-row;
   vertical-align : bottom;
   height: 63px;
   text-align: center;
-  a:link {
-    color: white;
-  }
   a{
-    padding-right: 33px;
+    padding: 0 27px;
   }
 }
