@@ -2,7 +2,6 @@
 
 #sidenav-body{
   margin: 0;
-  padding: 0;
   height: 100%;
 }
 
@@ -10,10 +9,15 @@
   height: 100%;
 }
 
+#page-content-wrapper{
+  height: 50px;
+  background-color: #00b3ee;
+  padding-left: 413px;
+}
+
 #sidebar-wrapper{
   border-collapse:collapse;
   display : table;
-
 
   z-index: 1;
   position: absolute;
