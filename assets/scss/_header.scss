@@ -3,15 +3,27 @@
 #sidenav-body{
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+#sidebar-html{
+  height: 100%;
 }
 
 #sidebar-wrapper{
+  border-collapse:collapse;
+  display : table;
+
+
   z-index: 1;
   position: absolute;
   height: 100%;
   width: 413px;
   overflow-y: hidden;
   background-color: $primaryBgColor;
+
+  color: white;
+  font-family: $primaryFont;
 
   -webkit-box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
   -moz-box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
@@ -41,6 +53,8 @@
   }
 }
 .sidebar-profile-section{
+  font-size: 21px;
+  display: flex;
     img{
       margin-top: 13px;
       margin-left: 27px;
@@ -48,4 +62,25 @@
       width: 78px;
       border-radius: 50%;
     }
+  .profile-text{
+    line-height: 19px;
+    margin-top: 30px;
+    margin-left: 15px;
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.sidebar-icons{
+  display : table-row;
+  vertical-align : bottom;
+  height: 63px;
+  text-align: center;
+  a:link {
+    color: white;
+  }
+  a{
+    padding-right: 33px;
+  }
 }
