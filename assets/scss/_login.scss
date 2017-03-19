@@ -21,7 +21,7 @@ $secondaryLoginText: #fff;
     .login-header {
         background-image: url('../img/login-deco.png');
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
         background-position: center center;
         min-height: 527px;
         z-index: 10;
@@ -39,6 +39,7 @@ $secondaryLoginText: #fff;
     .login-window {
         background-color: $tertriaryLoginBg;
         margin-top: -300px;
+        margin-bottom: 30px;
         padding-top: 180px;
         padding-bottom: 20px;
         text-align: center;
@@ -57,7 +58,7 @@ $secondaryLoginText: #fff;
         .register-button {
 
         }
-        
+
         #login-form {z-index: 20;}
         #app-register {display: none;}
     }
