@@ -25,6 +25,15 @@ $secondaryLoginText: #fff;
         background-position: center center;
         min-height: 527px;
         z-index: 10;
+
+        img {
+            margin-left: -50px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #fff;
+        }
     }
 
     .login-window {
