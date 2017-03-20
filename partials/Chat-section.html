@@ -18,12 +18,17 @@
 					<div class="pmContainerRight"><p>{{n.message}}</p></div>
 				</div>
 			</div>
-			<ng-form>
+			<ng-form novalidate>
 				<div class="row PMSection">
 					<div class="col-xs-12 ">
-							<input type="message" name="SendPM" placeholder="Write a message">
+							<textarea name="SendPM" placeholder="Write a message" rows="1"></textarea>
+							<button type="submit"><i class="fa fa-rocket" aria-hidden="true"></i></button>
+							<div class="icon">
 							<a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+							</div>
+							<div class="icon">
 							<a href="#"><i class="fa fa-smile-o" aria-hidden="true"></i></a>
+							</div>
 					</div>
 				</div>
 			</ng-form>
