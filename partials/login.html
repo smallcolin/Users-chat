@@ -63,7 +63,12 @@
    </div>
    <script>
    function openRegisterTab() {
-        document.getElementById("app-register").style.display = "block";
+       var appregister = document.getElementById("app-register");
+       if (appregister.style.display === "block") {
+           appregister.style.display = "none";
+       } else {
+           appregister.style.display = "block";
+       }
    }
    </script>
 </body>
