@@ -22,13 +22,9 @@ app.controller('chatSection' , function($scope) {
 	{author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
 	{author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
 	];
-	console.log($scope.test);
-});	
-
-
+});
 
 app.controller('newsSection' , function($scope) {
-
 	$scope.fakeNews = [
 	{author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy you',time: '16:30',image: '../assets/img/other.jpg'},
 	{author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy them',time: '16.29',image: '../assets/img/other.jpg'},
@@ -39,5 +35,22 @@ app.controller('newsSection' , function($scope) {
 	{author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy shit', time: '16:24',image: '../assets/img/other.jpg'},
 	{author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy rofl', time: '16:23',image: '../assets/img/other.jpg'}
 	];
+});
 
+app.directive('autoResize', function() {
+	return {
+		restrict: 'A',
+		scope: true,
+		require: 'ngModel',
+		link: function(scope, element, attrs, controller) {
+			scope.$watch('message.content', function(newValue) {
+				if (newValue == null) {
+					return;
+				}
+				if (element[0].scrollHeight > element[0].clientHeight) {
+  					element[0].style.height = element[0].scrollHeight + 5 + "px";
+				}
+			});
+		}
+	}
 });
