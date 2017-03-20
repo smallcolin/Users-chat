@@ -1,5 +1,4 @@
 
-
 section.sidebar-feed {
   margin-top: 3%;
 
@@ -14,10 +13,24 @@ section.sidebar-feed {
     }
 
     p {
-      opacity: 0.5;
+      opacity: 0.7;
       font-size: 21px;
       display: inline-block;
       margin-left: 5%;
+    }
+
+    i {
+      opacity: 0.85;
+      margin: 2.5% 0 0 2.5%;
+    }
+  }
+
+  article.sidebar-single-feed.icon {
+
+    /* Fuuul fix.. TBC*/
+
+    p {
+      margin-left: 8%;
     }
   }
 }
