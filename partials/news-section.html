@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-	<title>Oskars skit</title>
-	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <title>Oskars skit</title>
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body>
-	<section ng-controller="newsSection" class="newsSection">
-		<div class="container-fluid">
-			<div ng-repeat="n in fakeNews">
-				<div class="row newsContainer">
-					<div class="col-xs-3">
-						<img src="{{n.image}}" class="profileImage {{n.status}}">
-					</div>
-					<div class="col-xs-3">
-						<p>{{n.author}}</p>
-					</div>
-					<div class="col-xs-3 text-center">
-						<p><span>{{n.excerpt}}</span></p>
-					</div>
-					<div class="col-xs-3 text-right">
-						<p><span>{{n.time}}</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
+    <section ng-controller="newsSection" class="newsSection">
+        <div class="container-fluid">
+            <div ng-repeat="n in fakeNews">
+                <div class="row newsContainer">
+                    <div class="col-xs-3">
+                        <img src="{{n.image}}" class="profileImage {{n.status}}">
+                    </div>
+                    <div class="col-xs-3">
+                        <p>{{n.author}}</p>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <p><span>{{n.excerpt}}</span></p>
+                    </div>
+                    <div class="col-xs-3 text-right">
+                        <p><span>{{n.time}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	</section>
+    </section>
 </body>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
