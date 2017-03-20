@@ -14,9 +14,7 @@ $secondaryLoginText: #fff;
         font-size: 40px;
     }
 
-    h2, h3 {
-        font-weight: 300;
-    }
+    h2, h3 {font-weight: 300;}
 
     .login-header {
         background-image: url('../img/login-deco.png');
@@ -31,9 +29,7 @@ $secondaryLoginText: #fff;
             margin-top: 20px;
         }
 
-        h1 {
-            color: #fff;
-        }
+        h1 {color: #fff;}
     }
 
     .login-window {
@@ -53,10 +49,6 @@ $secondaryLoginText: #fff;
             background-color: $primaryLoginBg;
             border: none;
             color: $secondaryLoginText;
-        }
-
-        .register-button {
-
         }
 
         #login-form {z-index: 20;}
