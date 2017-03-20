@@ -42,7 +42,7 @@ app.directive('autoResize', function() {
 		restrict: 'A',
 		scope: true,
 		require: 'ngModel',
-		link: function(scope, element, attrs, controller) {
+		link: function(scope, element) {
 			scope.$watch('message.content', function(newValue) {
 				if (newValue == null) {
 					return;
