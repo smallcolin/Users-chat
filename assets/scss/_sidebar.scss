@@ -1,0 +1,23 @@
+
+
+section.sidebar-feed {
+  margin-top: 3%;
+
+  article.sidebar-single-feed {
+    padding: 2.5% 0 2.5% 5%;
+    border-top: solid 1px lightgray;
+
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    p {
+      opacity: 0.5;
+      font-size: 21px;
+      display: inline-block;
+      margin-left: 5%;
+    }
+  }
+}
