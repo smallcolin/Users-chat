@@ -7,9 +7,13 @@
   height: 100%;
 }
 
+#wrapper-all-content{
+  height: 100%;
+}
+
 #page-content-wrapper{
-  height: 50px;
-  background-color: #00b3ee;
+  height: 100%;
+  background-color: $primaryBgColor;
   padding-left: 413px;
 }
 
