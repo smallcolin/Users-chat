@@ -1,25 +1,24 @@
 .light {
 
-    #page-content-wrapper, #sidebar-wrapper, section.chatSection, section.chatSection .PMSection, section.newsSection, section.profileSection {
+    #page-content-wrapper, section.chatSection, section.chatSection .PMSection, section.newsSection, section.profileSection {
         background-color: $secondaryBgColor;
     }
 
     #sidebar-wrapper {
-
-        color: white;
+        background-color: $secondarySidebarBgColor;
+        color: $secondaryTextColor;
         font-family: $primaryFont;
-        box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.3);
 
         a {
             &:link, &:visited {
-                color: white;
+                color: $secondaryTextColor;
             }
 
             &:focus, &:hover {
                 text-decoration: none;
             }
         }
-
     }
 
     .sidebar-brand {
@@ -28,18 +27,18 @@
 
     .brand-text-and-logo span {
         font-family: $primaryFont;
-        color: white;
+        color: $secondaryTextColor;
     }
 
     .main-content-header {
         border: solid $secondaryDividerColor 1px;
         font-family: $primaryFont;
-        color: white;
+        color: $secondaryTextColor;
     }
 
     section.sidebar-feed {
         article.sidebar-single-feed {
-            border-top: solid 1px $secondaryDividerColor;
+            border-top: solid 1px $secondarySidebarBgColor;
         }
     }
 
@@ -48,7 +47,7 @@
         div {
             .pmContainer {
                 background-color: $secondaryDividerColor;
-                color: white;
+                color: $secondaryTextColor;
             }
         }
 
@@ -69,7 +68,7 @@
     		border-bottom: solid 2px $secondaryDividerColor;
 
     		a {
-    			color: white;
+    			color: $secondaryTextColor;
     		}
 
     		button {
@@ -98,7 +97,7 @@
         	}
 
         	p {
-        		color: white;
+        		color: $secondaryTextColor;
 
         		span {
         			color: #95989A;
