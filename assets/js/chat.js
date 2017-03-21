@@ -39,15 +39,14 @@ app.controller('newsSection' , function($scope) {
 app.directive('autoResize', function() {
     return {
         restrict: 'A',
-        scope: true,
         require: 'ngModel',
-        link: function(scope, element) {
-            scope.$watch('message.content', function(newValue) {
-                if (newValue == null) {
-                    return;
-                }
-                if (element[0].scrollHeight > element[0].clientHeight) {
-                    element[0].style.height = element[0].scrollHeight + 5 + "px";
+        link: function(scope, element, controller) {
+            scope.$watch('content.message', function(newValue) {
+                if (newValue == null || newValue == "") {
+                    element[0].style.height = "40px";
+                } else {
+                    element[0].style.height = 'auto';
+                    element[0].style.height = element[0].scrollHeight + "px";
                 }
             });
         }

@@ -21,7 +21,7 @@
             <ng-form novalidate>
                 <div class="row PMSection">
                     <div class="col-xs-12 ">
-                        <textarea name="SendPM" placeholder="Write a message..." ng-model="message.content" auto-resize>{{message.content}}</textarea>
+                        <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" auto-resize>{{content.message}}</textarea>
                         <button type="submit" class="fa fa-rocket"></button>
                         <div class="icon-wrapper pull-right">
                             <a href="#" class="fa fa-paperclip"></a>

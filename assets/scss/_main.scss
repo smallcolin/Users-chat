@@ -73,10 +73,9 @@ section.chatSection {
 			width: 90%;
 			border-radius: 5px;
 			height: 40px;
-			padding-top: 7px;
-			padding-bottom: 7px;
-			padding-left: 10px;
-			overflow-x: auto;
+            padding: 7px 10px 7px;
+            overflow: hidden;
+            word-wrap: break-word;
 		}
 		a {
 			font-size: 40px;
