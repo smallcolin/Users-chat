@@ -8,13 +8,13 @@ app.config(function ($stateProvider, $urlRouterProvider){
         .state('feed', {
             name: 'feed',
             controller: 'newsSection',
-            templateUrl: 'partials/news-section',
-            url: 'feed'
+            templateUrl: 'partials/news-section.html',
+            url: '/feed'
         })
         .state('chat', {
             name: 'chat',
             controller: 'chatSection',
-            templateUrl: 'partials/chat-section.html',
-            url: 'chat'
+            templateUrl: 'partials/Chat-section.html',
+            url: '/chat'
         })
 });
