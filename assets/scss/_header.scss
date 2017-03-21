@@ -50,7 +50,7 @@
 .brand-text-and-logo {
     display: flex;
     align-items: center;
-    padding-left: 45px;
+    padding-left: 65px;
     height: 100%;
     img {
         width: 60px;
@@ -58,20 +58,20 @@
         vertical-align: middle
     }
     span {
-        padding-left: 55px;
+        padding-left: 25px;
         font-family: $primaryFont;
         font-size: 23px;
         color: white;
     }
 }
 .sidebar-profile-section {
-    font-size: 21px;
+    font-size: 18px;
     display: flex;
     img {
-        margin-top: 16.5px;
+        margin-top: 19px;
         margin-left: 27px;
-        height: 60px;
-        width: 60px;
+        height: 55px;
+        width: 55px;
         border-radius: 50%;
     }
     .profile-text {
@@ -79,12 +79,12 @@
         margin-top: 30px;
         margin-left: 15px;
         p {
-            font-size: 16px;
+            font-size: 14px;
         }
         a {
             position: absolute;
             right: 26px;
-            top: 210px;
+            top: 130px;
         }
     }
 }
@@ -100,13 +100,13 @@
 }
 
 .main-content-header {
-    height: 100px;
+    height: 93px;
     border: solid $primaryDividerColor 1px;
     margin: 0;
     font-family: $primaryFont;
     font-size: 22px;
     color: white;
-    line-height: 100px;
+    line-height: 93px;
     p{
         text-align: center;
     }
