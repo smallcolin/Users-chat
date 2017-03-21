@@ -1,25 +1,21 @@
 section.chatSection {
-<<<<<<< HEAD
-	background-color: $primaryBgColor;
-	margin: 0;
-	overflow-y: scroll;
-	height: 350px;
-=======
-    background-color: $primaryBgColor;
+    background-color:$primaryBgColor;
+    margin: 0;
+    overflow-y: scroll;
+    height: 350px;
     padding-bottom: 120px;
 
->>>>>>> origin/master
-    div {
-        .pmContainer {
-            background-color: $primaryDividerColor;
-            color: white;
-            padding: 15px 20px 6px 20px;
-            margin: 10px 5px;
-            border-radius: 20px;
-            display: inline-block;
-            max-width: 50%;
-        }
+.chatContainer{
+    .pmContainer {
+        background-color: $primaryDividerColor;
+        color: white;
+        padding: 15px 20px 6px 20px;
+        margin: 10px 5px;
+        border-radius: 20px;
+        display: inline-block;
+        max-width: 50%;
     }
+}
 
     img {
         width: 50px;
@@ -38,120 +34,116 @@ section.chatSection {
             box-shadow: 0px 0px 2px 1px #ff5000;
         }
     }
-<<<<<<< HEAD
 }
 
-.form-wrapper{
-	margin: 0;
+.form-wrapper {
+    margin: 0;
 }
 
 .PMSection {
-	border-top: solid 2px $primaryDividerColor;
-	padding: 18px 10px 20px 10px;
+    border-top: solid 2px $primaryDividerColor;
+    padding: 18px 10px 20px 10px;
 
-	bottom: 0px;
+    bottom: 0px;
 
-	border-bottom: solid 2px $primaryDividerColor;
-	background-color: $primaryBgColor;
-	.icon-wrapper {
-		padding-left: 20px;
-		bottom: 0;
-		right: 20px;
-		position: absolute;
-		a.fa-paperclip {
-			margin-right: 15px;
-		}
-		a.fa {
-			display: inline-block;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-	textarea {
-		outline: 0;
-		resize: none;
-		width: 90%;
-		border-radius: 5px;
-		height: 40px;
-		padding: 7px 10px 7px;
-		overflow: hidden;
-		word-wrap: break-word;
-	}
-	a {
-		font-size: 40px;
-		color: white;
-	}
-	button {
-		background-color: transparent;
-		color: $primaryAccentColor;
-		border:none;
-		font-size: 35px;
-		z-index: 99;
-	}
-=======
-
-    .PMSection {
-        border-top: solid 2px $primaryDividerColor;
-        padding: 18px 10px 20px 10px;
-        position: fixed;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
-        border-bottom: solid 2px $primaryDividerColor;
-        background-color: $primaryBgColor;
-
-        .icon-wrapper {
-            padding-left: 20px;
-            bottom: 0;
-            right: 20px;
-            position: absolute;
-
-            a.fa-paperclip {
-                margin-right: 15px;
+    border-bottom: solid 2px $primaryDividerColor;
+    background-color: $primaryBgColor;
+    .icon-wrapper {
+        padding-left: 20px;
+        bottom: 0;
+        right: 20px;
+        position: absolute;
+        a.fa-paperclip {
+            margin-right: 15px;
+        }
+        a.fa {
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
             }
-            a.fa {
-                display: inline-block;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-
-        textarea {
-            outline: 0;
-            resize: none;
-            width: 90%;
-            border-radius: 5px;
-            height: 40px;
-            padding: 7px 10px 7px;
-            overflow: hidden;
-            word-wrap: break-word;
-        }
-
-        a {
-            font-size: 40px;
-            color: white;
-        }
-
-        button {
-            background-color: transparent;
-            color: $primaryAccentColor;
-            border:none;
-            font-size: 35px;
-            right: 12.4%;
-            bottom: 2.8%;
-            position: fixed;
-            z-index: 99;
         }
     }
->>>>>>> origin/master
-}
-
-section.newsSection{
+    textarea {
+        outline: 0;
+        resize: none;
+        width: 90%;
+        border-radius: 5px;
+        height: 40px;
+        padding: 7px 10px 7px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+    a {
+        font-size: 40px;
+        color: white;
+    }
+    button {
+        background-color: transparent;
+        color: $primaryAccentColor;
+        border: none;
+        font-size: 35px;
+        z-index: 99;
+    }
+.PMSection {
+    border-top: solid 2px $primaryDividerColor;
+    padding: 18px 10px 20px 10px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom: solid 2px $primaryDividerColor;
     background-color: $primaryBgColor;
 
-    .newsContainer{
+    .icon-wrapper {
+        padding-left: 20px;
+        bottom: 0;
+        right: 20px;
+        position: absolute;
+
+        a.fa-paperclip {
+            margin-right: 15px;
+        }
+        a.fa {
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    textarea {
+        outline: 0;
+        resize: none;
+        width: 90%;
+        border-radius: 5px;
+        height: 40px;
+        padding: 7px 10px 7px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+    a {
+        font-size: 40px;
+        color: white;
+    }
+
+    button {
+        background-color: transparent;
+        color: $primaryAccentColor;
+        border: none;
+        font-size: 35px;
+        right: 12.4%;
+        bottom: 2.8%;
+        position: fixed;
+        z-index: 99;
+    }
+} > > > > > > > origin / master
+}
+
+section.newsSection {
+    background-color: $primaryBgColor;
+
+    .newsContainer {
         height: 80px;
         border-bottom: 2px solid $primaryDividerColor;
         border-top: 2px solid $primaryDividerColor;
