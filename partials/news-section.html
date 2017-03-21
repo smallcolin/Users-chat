@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html ng-app="app">
-<head>
-    <title>Oskars skit</title>
-    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-</head>
-<body>
-    <section ng-controller="newsSection" class="newsSection">
+
+    <section class="newsSection">
         <div class="container-fluid">
             <div ng-repeat="n in fakeNews">
                 <div class="row newsContainer">
@@ -28,9 +20,4 @@
         </div>
 
     </section>
-</body>
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../bower_components/angular/angular.js"> </script>
-<script src="../assets/js/chat.js"></script>
-</html>
+
