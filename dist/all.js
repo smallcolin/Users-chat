@@ -1,6 +1,6 @@
 var app = angular.module('app', [] );
 
-app.controller('chatSection' , function($scope) {
+app.controller('chatSection' , ["$scope", function($scope) {
     $scope.testChat = [
         {author:'you', image: '../assets/img/you.jpg',status: 'online', message:'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'other', image: '../assets/img/other.jpg',status: 'offline', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
@@ -21,9 +21,9 @@ app.controller('chatSection' , function($scope) {
         {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
     ];
-});
+}]);
 
-app.controller('newsSection' , function($scope) {
+app.controller('newsSection' , ["$scope", function($scope) {
     $scope.fakeNews = [
         {author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy you',time: '16:30',image: '../assets/img/other.jpg'},
         {author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy them',time: '16.29',image: '../assets/img/other.jpg'},
@@ -34,7 +34,7 @@ app.controller('newsSection' , function($scope) {
         {author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy shit', time: '16:24',image: '../assets/img/other.jpg'},
         {author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy rofl', time: '16:23',image: '../assets/img/other.jpg'}
     ];
-});
+}]);
 
 app.directive('autoResize', function() {
     return {
@@ -52,3 +52,15 @@ app.directive('autoResize', function() {
         }
     }
 });
+
+
+
+app.controller('profileSection' , ["$scope", function ($scope) {
+    $scope.imgSrc = '../assets/img/jobs.png';
+    $scope.showName = 'Visningsnamn';
+    $scope.userName = 'Username';
+    $scope.yourEmail = 'namn.efternamn@exempel.com';
+    $scope.yourInfo = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada, est vitae commodo dapibus, ipsum velit euismod nibh, sit amet efficitur justo est ac augue.'
+}]);
+
+

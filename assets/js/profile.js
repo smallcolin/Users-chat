@@ -1,4 +1,4 @@
-var app = angular.module( 'app', [] );
+
 
 app.controller('profileSection' , function ($scope) {
     $scope.imgSrc = '../assets/img/jobs.png';
