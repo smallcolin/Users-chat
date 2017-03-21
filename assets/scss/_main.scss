@@ -84,60 +84,6 @@ section.chatSection {
         font-size: 35px;
         z-index: 99;
     }
-.PMSection {
-    border-top: solid 2px $primaryDividerColor;
-    padding: 18px 10px 20px 10px;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    border-bottom: solid 2px $primaryDividerColor;
-    background-color: $primaryBgColor;
-
-    .icon-wrapper {
-        padding-left: 20px;
-        bottom: 0;
-        right: 20px;
-        position: absolute;
-
-        a.fa-paperclip {
-            margin-right: 15px;
-        }
-        a.fa {
-            display: inline-block;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-
-    textarea {
-        outline: 0;
-        resize: none;
-        width: 90%;
-        border-radius: 5px;
-        height: 40px;
-        padding: 7px 10px 7px;
-        overflow: hidden;
-        word-wrap: break-word;
-    }
-
-    a {
-        font-size: 40px;
-        color: white;
-    }
-
-    button {
-        background-color: transparent;
-        color: $primaryAccentColor;
-        border: none;
-        font-size: 35px;
-        right: 12.4%;
-        bottom: 2.8%;
-        position: fixed;
-        z-index: 99;
-    }
-} > > > > > > > origin / master
 }
 
 section.newsSection {
