@@ -1,99 +1,114 @@
-#sidenav-body{
-  margin: 0;
-  height: 100%;
+#sidenav-body {
+    margin: 0;
+    height: 100%;
 }
 
-#sidebar-html{
-  height: 100%;
+#sidebar-html {
+    height: 100%;
 }
 
-#wrapper-all-content{
-  height: 100%;
+#wrapper-all-content {
+    height: 100%;
 }
 
-#page-content-wrapper{
-  height: 100%;
-  background-color: $primaryBgColor;
-  padding-left: 413px;
+#page-content-wrapper {
+    height: 100%;
+    background-color: $primaryBgColor;
+    padding-left: 413px;
+    padding-right: 0;
 }
 
-#sidebar-wrapper{
-  border-collapse:collapse;
-  display : table;
-  a:link {
+#sidebar-wrapper {
+    border-collapse: collapse;
+    display: table;
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 413px;
+    overflow-y: hidden;
+    background-color: $primaryBgColor;
+
     color: white;
-  }
-  a:visited {
-    color: white;
-  }
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 413px;
-  overflow-y: hidden;
-  background-color: $primaryBgColor;
-
-  color: white;
-  font-family: $primaryFont;
-
-  -webkit-box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
-  box-shadow: 6px 3px 6px 0 rgba(0,0,0,0.75);
-}
-
-.sidebar-brand{
-  background-color: $primaryAccentColor;
-  height: 185px;
-}
-
-.brand-text-and-logo{
-  display: flex;
-  align-items: center;
-  padding-left: 26px;
-  padding-top: 43px;
-  img{
-    width: 99px;
-    height: 99px;
-    vertical-align:middle
-  }
-  span{
-    padding-left: 22px;
     font-family: $primaryFont;
-    font-size: 37px;
-    color: white;
-  }
-}
-.sidebar-profile-section{
-  font-size: 21px;
-  display: flex;
-    img{
-      margin-top: 13px;
-      margin-left: 27px;
-      height: 78px;
-      width: 78px;
-      border-radius: 50%;
-    }
-  .profile-text{
-    line-height: 19px;
-    margin-top: 30px;
-    margin-left: 15px;
-    p{
-      font-size: 16px;
-    }
-    a{
-      position: absolute;
-      right: 26px;
-      top:210px;
-    }
-  }
+
+    -webkit-box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-.sidebar-bottom-icons{
-  display : table-row;
-  vertical-align : bottom;
-  height: 63px;
-  text-align: center;
-  a{
-    padding: 0 27px;
-  }
+.sidebar-brand {
+    background-color: $primaryAccentColor;
+    height: 185px;
+}
+
+.brand-text-and-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+    padding-top: 43px;
+    img {
+        width: 99px;
+        height: 99px;
+        vertical-align: middle
+    }
+    span {
+        padding-left: 22px;
+        font-family: $primaryFont;
+        font-size: 37px;
+        color: white;
+    }
+}
+
+.sidebar-profile-section {
+    font-size: 21px;
+    display: flex;
+    img {
+        margin-top: 13px;
+        margin-left: 27px;
+        height: 78px;
+        width: 78px;
+        border-radius: 50%;
+    }
+    .profile-text {
+        line-height: 19px;
+        margin-top: 30px;
+        margin-left: 15px;
+        p {
+            font-size: 16px;
+        }
+        a {
+            position: absolute;
+            right: 26px;
+            top: 210px;
+        }
+    }
+}
+
+.sidebar-bottom-icons {
+    display: table-row;
+    vertical-align: bottom;
+    height: 63px;
+    text-align: center;
+    a {
+        padding: 0 15px;
+    }
+}
+
+.main-content-header {
+    height: 100px;
+    border: solid $primaryDividerColor 1px;
+    margin: 0;
+    font-family: $primaryFont;
+    font-size: 22px;
+    color: white;
+    line-height: 100px;
+    p{
+        text-align: center;
+    }
 }
