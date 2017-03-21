@@ -1,4 +1,3 @@
-
 <header class="main-content-header row col-xs-12"><p>Messages</p></header>
 <section class="chatSection row col-xs-12" scroll-down="testChat">
 
@@ -15,15 +14,14 @@
 </section>
 
 <div class="form-wrapper col-xs-12 row">
-    <ng-form novalidate>
+    <form novalidate name="messageForm">
         <div class="row PMSection">
-            <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" auto-resize>{{content.message}}</textarea>
+            <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" minlength="1" required auto-resize>{{content.message}}</textarea>
             <div class="icon-wrapper pull-right">
-                <button type="submit" class="fa fa-rocket"></button>
+                <button ng-click="send(content.message)" type="submit" class="fa fa-rocket" ng-disabled="messageForm.$invalid"></button>
                 <a href="#" class="fa fa-paperclip"></a>
                 <a href="#" class="fa fa-smile-o"></a>
             </div>
         </div>
-    </ng-form>
+    </form>
 </div>
-

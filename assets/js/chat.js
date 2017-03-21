@@ -19,6 +19,16 @@ app.controller('chatSection' , function($scope) {
         {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
     ];
+    $scope.send = function(a){
+        var content = {
+            author:'you',
+            image: 'assets/img/you.jpg',
+            status: 'online',
+            message: a
+        };
+        $scope.testChat.push(content);
+        $scope.content.message = '';
+    }
 });
 
 app.controller('newsSection' , function($scope) {
@@ -33,6 +43,9 @@ app.controller('newsSection' , function($scope) {
         {author: 'Bill Gates',status: 'online', excerpt: 'Im going to destroy rofl', time: '16:23',image: 'assets/img/other.jpg'}
     ];
 });
+
+
+
 
 app.directive('autoResize', function() {
     return {
