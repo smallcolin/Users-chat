@@ -44,35 +44,34 @@
 
 .sidebar-brand {
     background-color: $primaryAccentColor;
-    height: 185px;
+    height: 93px;
 }
 
 .brand-text-and-logo {
     display: flex;
     align-items: center;
-    padding-left: 26px;
-    padding-top: 43px;
+    padding-left: 45px;
+    height: 100%;
     img {
-        width: 99px;
-        height: 99px;
+        width: 60px;
+        height: 60px;
         vertical-align: middle
     }
     span {
-        padding-left: 22px;
+        padding-left: 55px;
         font-family: $primaryFont;
-        font-size: 37px;
+        font-size: 23px;
         color: white;
     }
 }
-
 .sidebar-profile-section {
     font-size: 21px;
     display: flex;
     img {
-        margin-top: 13px;
+        margin-top: 16.5px;
         margin-left: 27px;
-        height: 78px;
-        width: 78px;
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
     }
     .profile-text {
