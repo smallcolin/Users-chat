@@ -1,52 +1,33 @@
 section.chatSection {
 	background-color: $primaryBgColor;
 	padding-bottom: 120px;
-
-	div.pmContainerLeft {
-		background-color: $primaryDividerColor;
-		color: white;
-		float: left;
-		padding: 15px 20px 6px 20px;
-		margin: 10px 5px;
-		border-radius: 20px;
-		display: inline-block;
-	}
-	div.pmContainerRight {
-		background-color: $primaryDividerColor;
-		float: right;
-		color: white;
-		margin: 10px 5px;
-		padding: 15px 20px 6px 20px;
-		border-radius: 20px;
-		display: inline-block;
-	}
-	img.left {
-		width: 50px;
+    div {
+        .pmContainer {
+            background-color: $primaryDividerColor;
+            color: white;
+            padding: 15px 20px 6px 20px;
+            margin: 10px 5px;
+            border-radius: 20px;
+            display: inline-block;
+            max-width: 50%;
+        }
+    }
+    img {
+        width: 50px;
 		height: 50px;
-		display: inline-block;
-		float: left;
-		margin: 10px 5px;
+        margin: 10px 5px;
 		border-radius: 30px;
-	}
-	img.right {
-		width: 50px;
-		height: 50px;
 		display: inline-block;
-		float: right;
-		margin: 10px 5px;
-		border-radius: 30px;
-	}
-
-	img.online {
-		box-shadow: 0px 0px 4px $primaryUserOnlineColor;
-	}
-	img.offline {
-		box-shadow: 0px 0px 2px 1px #e5001d;
-	}
-	img.busy {
-		box-shadow: 0px 0px 2px 1px #ff5000;
-	}
-
+        &.online {
+    		box-shadow: 0px 0px 4px $primaryUserOnlineColor;
+    	}
+    	&.offline {
+    		box-shadow: 0px 0px 2px 1px #e5001d;
+    	}
+    	&.busy {
+    		box-shadow: 0px 0px 2px 1px #ff5000;
+    	}
+    }
 	.PMSection {
 		border-top: solid 2px $primaryDividerColor;
 		padding: 18px 10px 20px 10px;
@@ -57,17 +38,15 @@ section.chatSection {
 		border-bottom: solid 2px $primaryDividerColor;
 		background-color: $primaryBgColor;
 		.icon-wrapper {
-			width: 10%;
 			padding-left: 20px;
-            position: fixed;
-            bottom: 3%;
-            right: 1%;
+            bottom: 0;
+            right: 20px;
+            position: absolute;
 			a.fa-paperclip {
 				margin-right: 15px;
 			}
 			a.fa {
 				display: inline-block;
-				
 				&:hover {
 					text-decoration: none;
 				}
@@ -79,16 +58,13 @@ section.chatSection {
 			width: 90%;
 			border-radius: 5px;
 			height: 40px;
-			padding-top: 7px;
-			padding-bottom: 7px;
-			padding-left: 10px;
+            padding: 7px 70px 7px 10px;
 			overflow-x: auto;
 		}
 		a {
 			font-size: 40px;
 			color: white;
 		}
-
 		button {
 			background-color: transparent;
 			color: $primaryAccentColor;
@@ -99,9 +75,7 @@ section.chatSection {
 			position: fixed;
 			z-index: 99;
 		}
-
 	}
-
 }
 
 section.newsSection{

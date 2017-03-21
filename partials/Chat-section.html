@@ -11,11 +11,12 @@
         <div class="container-fluid">
             <div class="row chatContainer" ng-repeat="n in testChat">
                 <div class="col-xs-12" ng-if="n.author == 'other'">
-                    <img src="{{n.image}}" class="left {{n.status}}"><div class="pmContainerLeft"><p>{{n.message}}</p></div>
+                    <img src="{{n.image}}" class="pull-left {{n.status}}">
+                    <div class="pmContainer pull-left"><p>{{n.message}}</p></div>
                 </div>
                 <div class="col-xs-12 text-right" ng-if="n.author == 'you'">
-                    <img src="{{n.image}}" class="right {{n.status}}">
-                    <div class="pmContainerRight"><p>{{n.message}}</p></div>
+                    <img src="{{n.image}}" class="pull-right {{n.status}}">
+                    <div class="pmContainer pull-right"><p>{{n.message}}</p></div>
                 </div>
             </div>
             <ng-form novalidate>
