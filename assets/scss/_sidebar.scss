@@ -1,7 +1,8 @@
 #sidebar-feed {
-    width: 249px;
-    height: 299px;
+    width: 100%;
+    height: 400px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 section.sidebar-feed {
