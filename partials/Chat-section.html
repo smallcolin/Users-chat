@@ -1,5 +1,8 @@
+<div class="chat-content">
+
+
 <header class="main-content-header row col-xs-12"><p>Messages</p></header>
-<section class="chatSection row col-xs-12" scroll-down="testChat">
+<section class="chatSection row col-xs-12" ng-controller="chatSection" scroll-down="testChat">
 
     <div class="row chatContainer" ng-repeat="n in testChat">
         <div class="col-xs-12" ng-if="n.author == 'other'">
@@ -24,4 +27,5 @@
             </div>
         </div>
     </form>
+</div>
 </div>
