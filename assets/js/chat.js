@@ -6,7 +6,7 @@ app.controller('chatSection' , function($scope) {
         {author:'other', image: '../assets/img/other.jpg',status: 'offline', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'other', image: '../assets/img/other.jpg',status: 'offline', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'you' , image: '../assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
