@@ -57,7 +57,7 @@ app.directive('scrollDown', function($timeout, $window) {
         link: function(scope, element, attr) {
             scope.$watchCollection(attr.scrollDown, function(newVal) {
                 $timeout(function() {
-                    element[0].scrollTo = element[0].scrollHeight;
+                    $window.scrollTo(0, element[0].scrollHeight);
                 }, 0);
             });
         }
