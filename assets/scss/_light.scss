@@ -10,11 +10,14 @@
         font-family: $primaryFont;
         box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.75);
 
-        a:link {
-            color: white;
-        }
-        a:visited {
-            color: white;
+        a {
+            &:link, &:visited {
+                color: white;
+            }
+
+            &:focus, &:hover {
+                text-decoration: none;
+            }
         }
 
     }
