@@ -20,7 +20,7 @@ app.controller('chatSection' , function($scope) {
         {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
     ];
     $scope.send = function(a){
-        if (a == null) {
+        if (a == null || a == "") {
             return false;
         }
         var content = {
@@ -80,7 +80,7 @@ app.directive('scrollDown', function($timeout, $window) {
         link: function(scope, element, attr) {
             scope.$watchCollection(attr.scrollDown, function(newVal) {
                 $timeout(function() {
-                    element[0].scrollTo(0, element[0].scrollHeight);
+                    element[0].scrollTop = element[0].scrollHeight;
                 }, 0);
             });
         }
