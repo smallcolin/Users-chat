@@ -17,7 +17,7 @@
 <div class="form-wrapper col-xs-12 row">
     <form novalidate name="messageForm">
         <div class="row PMSection">
-            <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" minlength="1" required auto-resize enter-submit="send(content.message)">{{content.message}}</textarea>
+            <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" minlength="1" required enter-submit="send(content.message)">{{content.message}}</textarea>
             <div class="icon-wrapper pull-right">
                 <button ng-click="send(content.message)" type="submit" class="fa fa-rocket" ng-disabled="messageForm.$invalid"></button>
                 <a href="#" class="fa fa-paperclip"></a>

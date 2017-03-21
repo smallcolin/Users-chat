@@ -20,6 +20,9 @@ app.controller('chatSection' , function($scope) {
         {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
     ];
     $scope.send = function(a){
+        if (a == null) {
+            return false;
+        }
         var content = {
             author:'you',
             image: 'assets/img/you.jpg',
@@ -51,11 +54,12 @@ app.controller('newsSection' , function($scope) {
 app.directive('autoResize', function($window) {
     return {
         restrict: 'A',
-        scope: true,
         require: 'ngModel',
         link: function(scope, element, controller) {
             scope.$watch('content.message', function(newValue) {
-                var msg = document.getElementById("msg");
+
+                var msg = angular.element("#msg")[0];
+                console.log(msg);
                 if (newValue == null || newValue == "") {
                     msg.style.height = "calc(100% - 181px)";
                     element[0].style.height = "40px";
@@ -63,7 +67,7 @@ app.directive('autoResize', function($window) {
                     element[0].style.height = 'auto';
                     element[0].style.height = element[0].scrollHeight + "px";
                     var newHeight = $window.innerHeight - 145 - element[0].clientHeight;
-                    document.getElementById("msg").style.height = newHeight + "px";
+                    msg.style.height = newHeight + "px";
                 }
             });
         }
