@@ -50,3 +50,16 @@ app.directive('autoResize', function() {
         }
     }
 });
+
+app.directive('scrollDown', function($timeout, $window) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attr) {
+            scope.$watchCollection(attr.scrollDown, function(newVal) {
+                $timeout(function() {
+                    element[0].scrollTo = element[0].scrollHeight;
+                }, 0);
+            });
+        }
+    }
+});
