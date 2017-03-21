@@ -86,6 +86,7 @@ section.newsSection{
 		height: 80px;
 		border-bottom: 2px solid $primaryDividerColor;
 		border-top: 2px solid $primaryDividerColor;
+        vertical-align: center;
 	img.profileImage {
 		width: 60px;
 		height: 60px;
@@ -93,6 +94,7 @@ section.newsSection{
 		float: left;
 		margin: 10px 5px;
 		border-radius: 30px;
+
 
 	}
 	img.online {
