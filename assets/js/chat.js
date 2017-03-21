@@ -64,7 +64,6 @@ app.directive('autoResize', function($window) {
                     element[0].style.height = element[0].scrollHeight + "px";
                     var newHeight = $window.innerHeight - 145 - element[0].clientHeight;
                     document.getElementById("msg").style.height = newHeight + "px";
-                    console.log(msg.style.height);
                 }
             });
         }
@@ -85,7 +84,7 @@ app.directive('scrollDown', function($timeout, $window) {
 });
 
 app.directive('enterSubmit', function () {
-    return { 
+    return {
         restrict : 'A',
         link: function (scope, element, attrs) {
             element.bind("keydown keypress", function (event) {
