@@ -1,7 +1,7 @@
 
 
-app.controller('profileSection' , function ($scope) {
-    $scope.imgSrc = '../assets/img/jobs.png';
+app.controller('settingsProfile' , function ($scope) {
+    $scope.imgSrc = 'assets/img/jobs.png';
     $scope.showName = 'Visningsnamn';
     $scope.userName = 'Username';
     $scope.yourEmail = 'namn.efternamn@exempel.com';

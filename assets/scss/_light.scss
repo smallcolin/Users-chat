@@ -1,0 +1,116 @@
+.light {
+
+    #page-content-wrapper, #sidebar-wrapper, section.chatSection, section.chatSection .PMSection, section.newsSection, section.profileSection {
+        background-color: $secondaryBgColor;
+    }
+
+    #sidebar-wrapper {
+
+        color: white;
+        font-family: $primaryFont;
+        box-shadow: 6px 3px 6px 0 rgba(0, 0, 0, 0.75);
+
+        a {
+            &:link, &:visited {
+                color: white;
+            }
+
+            &:focus, &:hover {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .sidebar-brand {
+        background-color: $secondaryAccentColor;
+    }
+
+    .brand-text-and-logo span {
+        font-family: $primaryFont;
+        color: white;
+    }
+
+    .main-content-header {
+        border: solid $secondaryDividerColor 1px;
+        font-family: $primaryFont;
+        color: white;
+    }
+
+    section.sidebar-feed {
+        article.sidebar-single-feed {
+            border-top: solid 1px $secondaryDividerColor;
+        }
+    }
+
+
+    section.chatSection {
+        div {
+            .pmContainer {
+                background-color: $secondaryDividerColor;
+                color: white;
+            }
+        }
+
+        img {
+            &.online {
+        		box-shadow: 0px 0px 4px $secondaryUserOnlineColor;
+        	}
+        	&.offline {
+        		box-shadow: 0px 0px 2px 1px #e5001d;
+        	}
+        	&.busy {
+        		box-shadow: 0px 0px 2px 1px #ff5000;
+        	}
+        }
+
+    	.PMSection {
+    		border-top: solid 2px $secondaryDividerColor;
+    		border-bottom: solid 2px $secondaryDividerColor;
+
+    		a {
+    			color: white;
+    		}
+
+    		button {
+    			background-color: transparent;
+    			color: $secondaryAccentColor;
+    		}
+    	}
+    }
+
+    section.newsSection {
+
+    	.newsContainer {
+    		border-bottom: 2px solid $secondaryDividerColor;
+    		border-top: 2px solid $secondaryDividerColor;
+
+        	img.online {
+        		box-shadow: 0px 0px 4px $secondaryUserOnlineColor;
+        	}
+
+        	img.offline {
+        		box-shadow: 0px 0px 2px 1px #e5001d;
+        	}
+
+        	img.busy {
+        		box-shadow: 0px 0px 2px 1px #ff5000;
+        	}
+
+        	p {
+        		color: white;
+
+        		span {
+        			color: #95989A;
+        		}
+        	}
+        }
+    }
+
+    section.profileSection {
+
+        .profileDivider {
+            border-bottom: $secondaryDividerColor 2px solid;
+        }
+    }
+}

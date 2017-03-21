@@ -1,9 +1,19 @@
 $primaryFont: 'Roboto', sans-serif;
 
-
-$primaryBgColor: #2C2C29; //Darkdark grey
-$primaryDividerColor: #1F1F1D; //Black
-$primaryUserOnlineColor: #00FF11; //Green
-$primaryAccentColor: #008CED; //Blue
+$primaryBgColor: #2C2C29; /*Darkdark grey*/
+$primaryDividerColor: #1F1F1D; /*Black*/
+$primaryUserOnlineColor: #00FF11; /*Green*/
+$primaryAccentColor: #008CED; /*Blue*/
 
 $secondarySidebarBgColor: #f3f2f2;
+$secondaryBgColor: white;
+$secondaryTextColor: black;
+$secondaryDividerColor: #fff;
+$secondaryUserOnlineColor: #fff;
+$secondaryAccentColor: #fff;
+
+$primaryLoginBg: #008CED;
+$primaryLoginText: #95989A;
+$secondaryLoginBg: #008CED;
+$secondaryLoginText: #fff;
+$tertriaryLoginBg: #fff;
