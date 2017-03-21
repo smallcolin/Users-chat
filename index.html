@@ -27,8 +27,10 @@
         <div id="sidebar-feed">
             <section class="sidebar-feed">
                 <article class="sidebar-single-feed">
-                    <img src="assets/img/hash-tag-white-2.png" alt="">
-                    <p>Programming</p>
+                    <a ui-sref="chat">
+                        <img src="assets/img/hash-tag-white-2.png" alt="">
+                        <p>Programming</p>
+                    </a>    
                 </article>
                 <article class="sidebar-single-feed">
                     <img src="assets/img/jobs.png" alt="">
@@ -81,7 +83,7 @@
             </section>
         </div>
         <div class="sidebar-bottom-icons">
-            <a href="#"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+            <a ui-sref="feed"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
