@@ -1,5 +1,3 @@
-var app = angular.module('app', [] );
-
 app.controller('chatSection' , function($scope) {
     $scope.testChat = [
         {author:'you', image: '../assets/img/you.jpg',status: 'online', message:'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
