@@ -1,6 +1,7 @@
 section.chatSection {
-	background-color: $primaryBgColor;
-	padding-bottom: 120px;
+    background-color: $primaryBgColor;
+    padding-bottom: 120px;
+
     div {
         .pmContainer {
             background-color: $primaryDividerColor;
@@ -12,109 +13,118 @@ section.chatSection {
             max-width: 50%;
         }
     }
+
     img {
         width: 50px;
-		height: 50px;
+        height: 50px;
         margin: 10px 5px;
-		border-radius: 30px;
-		display: inline-block;
+        border-radius: 30px;
+        display: inline-block;
+
         &.online {
-    		box-shadow: 0px 0px 4px $primaryUserOnlineColor;
-    	}
-    	&.offline {
-    		box-shadow: 0px 0px 2px 1px #e5001d;
-    	}
-    	&.busy {
-    		box-shadow: 0px 0px 2px 1px #ff5000;
-    	}
+            box-shadow: 0px 0px 4px $primaryUserOnlineColor;
+        }
+        &.offline {
+            box-shadow: 0px 0px 2px 1px #e5001d;
+        }
+        &.busy {
+            box-shadow: 0px 0px 2px 1px #ff5000;
+        }
     }
-	.PMSection {
-		border-top: solid 2px $primaryDividerColor;
-		padding: 18px 10px 20px 10px;
-		position: fixed;
-		bottom: 0px;
-		right: 0px;
-		left: 0px;
-		border-bottom: solid 2px $primaryDividerColor;
-		background-color: $primaryBgColor;
-		.icon-wrapper {
-			padding-left: 20px;
+
+    .PMSection {
+        border-top: solid 2px $primaryDividerColor;
+        padding: 18px 10px 20px 10px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        border-bottom: solid 2px $primaryDividerColor;
+        background-color: $primaryBgColor;
+
+        .icon-wrapper {
+            padding-left: 20px;
             bottom: 0;
             right: 20px;
             position: absolute;
-			a.fa-paperclip {
-				margin-right: 15px;
-			}
-			a.fa {
-				display: inline-block;
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
-		textarea {
-			outline: 0;
-			resize: none;
-			width: 90%;
-			border-radius: 5px;
-			height: 40px;
+
+            a.fa-paperclip {
+                margin-right: 15px;
+            }
+            a.fa {
+                display: inline-block;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        textarea {
+            outline: 0;
+            resize: none;
+            width: 90%;
+            border-radius: 5px;
+            height: 40px;
             padding: 7px 10px 7px;
             overflow: hidden;
             word-wrap: break-word;
-		}
-		a {
-			font-size: 40px;
-			color: white;
-		}
-		button {
-			background-color: transparent;
-			color: $primaryAccentColor;
-			border:none;
-			font-size: 35px;
-			right: 12.4%;
-			bottom: 2.8%;
-			position: fixed;
-			z-index: 99;
-		}
-	}
+        }
+
+        a {
+            font-size: 40px;
+            color: white;
+        }
+
+        button {
+            background-color: transparent;
+            color: $primaryAccentColor;
+            border:none;
+            font-size: 35px;
+            right: 12.4%;
+            bottom: 2.8%;
+            position: fixed;
+            z-index: 99;
+        }
+    }
 }
 
 section.newsSection{
-	background-color: $primaryBgColor;
+    background-color: $primaryBgColor;
 
-	.newsContainer{
-		height: 80px;
-		border-bottom: 2px solid $primaryDividerColor;
-		border-top: 2px solid $primaryDividerColor;
+    .newsContainer{
+        height: 80px;
+        border-bottom: 2px solid $primaryDividerColor;
+        border-top: 2px solid $primaryDividerColor;
         vertical-align: center;
-	img.profileImage {
-		width: 60px;
-		height: 60px;
-		display: inline-block;
-		float: left;
-		margin: 10px 5px;
-		border-radius: 30px;
 
+        img.profileImage {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            float: left;
+            margin: 10px 5px;
+            border-radius: 30px;
+        }
+        img {
+            &.online {
+                box-shadow: 0px 0px 4px $primaryUserOnlineColor;
+            }
+            &.offline {
+                box-shadow: 0px 0px 2px 1px #e5001d;
+            }
+            &.busy {
+                box-shadow: 0px 0px 2px 1px #ff5000;
+            }
+        }
 
-	}
-	img.online {
-		box-shadow: 0px 0px 4px $primaryUserOnlineColor;
-	}
-	img.offline {
-		box-shadow: 0px 0px 2px 1px #e5001d;
-	}
-	img.busy {
-		box-shadow: 0px 0px 2px 1px #ff5000;
-	}
-	p {
-		color: white;
-		margin-top: 25px;
-		margin-right: 40px;
+        p {
+            color: white;
+            margin-top: 25px;
+            margin-right: 40px;
 
-		span {
-			color: #95989A;
-		}
-	}
-
-}
+            span {
+                color: #95989A;
+            }
+        }
+    }
 }
