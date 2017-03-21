@@ -23,4 +23,4 @@ gulp.task('watch', function () {
   gulp.watch('./assets/scss/*.scss', ['sass']);
   gulp.watch('./assets/js/*.js', ['concat']);
 });
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'concat', 'watch']);

@@ -12,6 +12,9 @@ app.config(function ($stateProvider, $urlRouterProvider){
             url: 'feed'
         })
         .state('chat', {
-            name: 'chat'
+            name: 'chat',
+            controller: 'chatSection',
+            templateUrl: 'partials/chat-section.html',
+            url: 'chat'
         })
 });
