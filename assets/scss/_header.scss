@@ -16,7 +16,7 @@ html, body { height: 100%; width: 100%; margin: 0; }
 #page-content-wrapper {
     height: 100%;
     background-color: $primaryBgColor;
-    padding-left: 413px;
+    padding-left: $sidebarWidth;
     padding-right: 0;
 }
 
@@ -35,7 +35,7 @@ html, body { height: 100%; width: 100%; margin: 0; }
     z-index: 1;
     position: fixed;
     height: 100%;
-    width: 413px;
+    width: $sidebarWidth;
     overflow-y: hidden;
     background-color: $primaryBgColor;
 
