@@ -50,7 +50,7 @@ section.chatSection {
 }
 
 .icon-wrapper {
-    padding-left: 20px;
+    padding: 0;
     top: 17px;
     a.fa-paperclip {
         margin-right: 15px;
@@ -64,6 +64,7 @@ section.chatSection {
     a {
         font-size: 40px;
         color: white;
+        padding: 0;
     }
     button {
         background-color: transparent;
@@ -71,7 +72,7 @@ section.chatSection {
         border: none;
         font-size: 35px;
         z-index: 99;
-        right: 55px;
+        right: 33px;
         position: relative;
     }
 }
