@@ -21,7 +21,7 @@
 #sidebar-wrapper {
     border-collapse: collapse;
     display: table;
-    position: fixed;
+
     a:link {
         color: white;
     }
@@ -29,6 +29,7 @@
         color: white;
     }
     z-index: 1;
+    position: fixed;
     height: 100%;
     width: 413px;
     overflow-y: hidden;
