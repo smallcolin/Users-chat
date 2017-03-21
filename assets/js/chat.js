@@ -69,8 +69,9 @@ app.directive('scrollDown', function($timeout, $window) {
         restrict: 'A',
         link: function(scope, element, attr) {
             scope.$watchCollection(attr.scrollDown, function(newVal) {
+                console.log("hej");
                 $timeout(function() {
-                    $window.scrollTo(0, element[0].scrollHeight);
+                    element[0].scrollTo(0, element[0].scrollHeight);
                 }, 0);
             });
         }
