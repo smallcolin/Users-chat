@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="sidebar-html">
+<html ng-app="app" lang="en" id="sidebar-html">
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
@@ -91,6 +91,7 @@
     <div id="page-content-wrapper" class="col-md-12">
         <!--Main content goes here-->
         <header class="main-content-header col-md-12"><p>Messages</p></header>
+        <ui-view></ui-view>
     </div>
 </div>
 
