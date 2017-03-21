@@ -1,0 +1,29 @@
+section.profileSection {
+    background-color: $primaryBgColor;
+    color: white;
+    padding: 20px 0;
+
+    .profileDivider {
+        margin: 20px 0;
+        border-bottom: $primaryDividerColor 2px solid;
+    }
+
+    .profileImg {
+        height: auto;
+        width: 160px;
+        border-radius: 80px;
+    }
+
+    .passwordButton {
+        margin: 6px 0;
+    }
+
+    .fa {
+        padding-left: 8px;
+    }
+
+    .title {
+       font-weight: bold;
+       font-size: 16px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+    <section ng-controller="profileSection" class="profileSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2" ng-model="imgSrc">
+                    <img src="{{ imgSrc }}" class="profileImg" />
+                </div>
+                <div class="col-xs-4">
+                    <br />
+                    <p class="title">Name: <i class="fa fa-wrench"></i></p>
+                    <p ng-model="showName">{{ showName }}</p>
+                    <p class="title">Username: <i class="fa fa-wrench"></i></p>
+                    <p ng-model="userName">@{{ userName }}</p>
+                    <input type="button" class="passwordButton btn btn-danger" value="Change password">
+                </div>
+            </div>
+            <div class="row profileDivider"></div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="title">Email: <i class="fa fa-wrench"></i></p>
+                    <p ng-model="yourEmail">{{ yourEmail }}</p>
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5">
+                    <p class="title">Bio: <i class="fa fa-wrench"></i></p>
+                    <p ng-model="yourInfo">{{ yourInfo }}</p>
+                </div>
+            </div>
+        </div>      
+    </section>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../assets/js/profile.js"></script>
+</body>
+</html>
