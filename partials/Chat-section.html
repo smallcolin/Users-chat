@@ -1,30 +1,29 @@
-
-    <section class="chatSection" scroll-down="testChat">
-        <div class="container-fluid">
-            <div class="row">
-                <header class="main-content-header col-xs-12"><p>Messages</p></header>
+<section class="chatSection" scroll-down="testChat">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="main-content-header col-xs-12"><p>Messages</p></header>
+        </div>
+        <div class="row chatContainer" ng-repeat="n in testChat">
+            <div class="col-xs-12" ng-if="n.author == 'other'">
+                <img src="{{n.image}}" class="pull-left {{n.status}}">
+                <div class="pmContainer pull-left"><p>{{n.message}}</p></div>
             </div>
-            <div class="row chatContainer" ng-repeat="n in testChat">
-                <div class="col-xs-12" ng-if="n.author == 'other'">
-                    <img src="{{n.image}}" class="pull-left {{n.status}}">
-                    <div class="pmContainer pull-left"><p>{{n.message}}</p></div>
-                </div>
-                <div class="col-xs-12 text-right" ng-if="n.author == 'you'">
-                    <img src="{{n.image}}" class="pull-right {{n.status}}">
-                    <div class="pmContainer pull-right"><p>{{n.message}}</p></div>
-                </div>
+            <div class="col-xs-12 text-right" ng-if="n.author == 'you'">
+                <img src="{{n.image}}" class="pull-right {{n.status}}">
+                <div class="pmContainer pull-right"><p>{{n.message}}</p></div>
             </div>
-            <ng-form novalidate>
-                <div class="row PMSection">
-                    <div class="col-xs-12 ">
-                        <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" auto-resize>{{content.message}}</textarea>
-                        <div class="icon-wrapper pull-right">
-                            <button type="submit" class="fa fa-rocket"></button>
-                            <a href="#" class="fa fa-paperclip"></a>
-                            <a href="#" class="fa fa-smile-o"></a>
-                        </div>
+        </div>
+        <form novalidate name="messageForm">
+            <div class="row PMSection">
+                <div class="col-xs-12 ">
+                    <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" minlength="1" required auto-resize>{{content.message}}</textarea>
+                    <div class="icon-wrapper pull-right">
+                        <button ng-click="send(content.message)" type="submit" class="fa fa-rocket" ng-disabled="messageForm.$invalid"></button>
+                        <a href="#" class="fa fa-paperclip"></a>
+                        <a href="#" class="fa fa-smile-o"></a>
                     </div>
                 </div>
-            </ng-form>
-        </div>
-    </section>
+            </div>
+        </form>
+    </div>
+</section>
