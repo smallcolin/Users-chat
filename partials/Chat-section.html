@@ -1,4 +1,4 @@
-<div class="chat-content">
+<div class="chat-content" autoresize>
     <header class="main-content-header row col-xs-12"><p>Messages</p></header>
     <section class="chatSection row col-xs-12" id="msg">
 
@@ -17,7 +17,7 @@
     <div class="form-wrapper col-xs-12 row">
         <form novalidate name="messageForm" class="col-xs-10">
             <div class="PMSection">
-                <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" minlength="1" required auto-resize enter-submit="send(content.message)">{{content.message}}</textarea>
+                <textarea name="SendPM" placeholder="Write a message..." ng-model="content.message" ng-trim="false" minlength="1" required enter-submit="send(content.message)">{{content.message}}</textarea>
             </div>
         </form>
         <div class="icon-wrapper col-xs-2">

@@ -53,24 +53,24 @@ app.controller('newsSection' , function($scope) {
 
 app.directive('autoResize', function($window) {
     return {
-        restrict: 'A',
-        require: 'ngModel',
-        link: function(scope, element, controller) {
-            scope.$watch('content.message', function(newValue) {
-
-                var msg = angular.element("#msg")[0];
-                console.log(msg);
-                if (newValue == null || newValue == "") {
-                    msg.style.height = "calc(100% - 181px)";
-                    element[0].style.height = "40px";
-                } else {
-                    element[0].style.height = 'auto';
-                    element[0].style.height = element[0].scrollHeight + "px";
-                    var newHeight = $window.innerHeight - 145 - element[0].clientHeight;
-                    msg.style.height = newHeight + "px";
-                }
-            });
-        }
+        // restrict: 'A',
+        // require: 'ngModel',
+        // link: function(scope, element, controller) {
+        //     scope.$watch('content.message', function(newValue) {
+        //
+        //         var msg = angular.element("#msg")[0];
+        //         console.log(msg);
+        //         if (newValue == null || newValue == "") {
+        //             msg.style.height = "calc(100% - 181px)";
+        //             element[0].style.height = "40px";
+        //         } else {
+        //             element[0].style.height = 'auto';
+        //             element[0].style.height = element[0].scrollHeight + "px";
+        //             var newHeight = $window.innerHeight - 145 - element[0].clientHeight;
+        //             msg.style.height = newHeight + "px";
+        //         }
+        //     });
+        // }
     }
 });
 
