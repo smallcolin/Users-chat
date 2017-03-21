@@ -29,6 +29,7 @@ app.controller('chatSection' , function($scope) {
         $scope.testChat.push(content);
         $scope.content.message = '';
     }
+
 });
 
 app.controller('newsSection' , function($scope) {
@@ -81,4 +82,20 @@ app.directive('scrollDown', function($timeout, $window) {
             });
         }
     }
+});
+
+app.directive('enterSubmit', function () {
+    return { 
+        restrict : 'A',
+        link: function (scope, element, attrs) {
+            element.bind("keydown keypress", function (event) {
+                if(event.which === 13) {
+                    scope.$apply(function (){
+                    scope.$eval(attrs.enterSubmit);
+                });
+
+                event.preventDefault();
+            }
+        });
+    }};
 });

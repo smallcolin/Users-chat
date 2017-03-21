@@ -41,42 +41,30 @@ section.chatSection {
 
 .form-wrapper {
     margin: 0;
+    padding: 0;
+    border-bottom: solid 2px $primaryDividerColor;
+    border-top: solid 2px $primaryDividerColor;
+    form{
+        padding: 0;
+    }
 }
 
-.PMSection {
-    border-top: solid 2px $primaryDividerColor;
-    padding: 18px 10px 20px 10px;
-    bottom: 0px;
-    border-bottom: solid 2px $primaryDividerColor;
-    background-color: $primaryBgColor;
-    .icon-wrapper {
-        padding-left: 20px;
-        bottom: 0;
-        right: 20px;
-        position: absolute;
-        a.fa-paperclip {
-            margin-right: 15px;
-        }
-        a.fa {
-            display: inline-block;
-            &:hover {
-                text-decoration: none;
-            }
-        }
+.icon-wrapper {
+    padding: 0;
+    top: 17px;
+    a.fa-paperclip {
+        margin-right: 15px;
     }
-    textarea {
-        outline: 0;
-        resize: none;
-        width: 90%;
-        border-radius: 5px;
-        height: 40px;
-        padding: 7px 10px 7px;
-        overflow: hidden;
-        word-wrap: break-word;
+    a.fa {
+        display: inline-block;
+        &:hover {
+            text-decoration: none;
+        }
     }
     a {
         font-size: 40px;
         color: white;
+        padding: 0;
     }
     button {
         background-color: transparent;
@@ -84,8 +72,28 @@ section.chatSection {
         border: none;
         font-size: 35px;
         z-index: 99;
+        right: 33px;
+        position: relative;
     }
 }
+
+
+.PMSection {
+    padding: 18px 0 20px 10px;
+    bottom: 0px;
+    background-color: $primaryBgColor;
+    textarea {
+        outline: 0;
+        resize: none;
+        width: 100%;
+        border-radius: 5px;
+        height: 40px;
+        padding: 7px 10px 7px;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+}
+
 
 section.newsSection {
     background-color: $primaryBgColor;
