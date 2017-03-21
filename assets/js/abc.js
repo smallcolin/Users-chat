@@ -17,4 +17,10 @@ app.config(function ($stateProvider, $urlRouterProvider){
             templateUrl: 'partials/Chat-section.html',
             url: '/chat'
         })
+        .state('settingsProfile', {
+            name: 'settingsProfile',
+            controller: 'settingsProfile',
+            templateUrl: 'partials/profile-section.html',
+            url: '/settingsProfile'
+        })
 });

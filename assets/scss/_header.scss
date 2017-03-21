@@ -22,11 +22,13 @@
     border-collapse: collapse;
     display: table;
 
-    a:link {
-        color: white;
-    }
-    a:visited {
-        color: white;
+    a {
+        &:link, &:visited {
+            color: white;
+        }
+        &:focus, &:hover {
+            text-decoration: none;
+        }
     }
     z-index: 1;
     position: fixed;
