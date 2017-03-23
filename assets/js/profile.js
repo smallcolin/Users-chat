@@ -1,4 +1,6 @@
-
+app.run(function($rootScope) {
+$rootScope.lightTheme = false;
+});
 
 app.controller('settingsProfile' , function ($scope, $document) {
     $scope.imgSrc = 'assets/img/jobs.png';
@@ -12,14 +14,17 @@ app.controller('settingsProfile' , function ($scope, $document) {
 
     };
 });
+/*
 app.directive( 'bodyClass', function() {
     return {
         restrict: 'A',
         require: 'ngModel',
         link: function (scope, attrs, element, controller) {
             scope.$watch('lightTheme', function(newValue){
+                console.log(newValue);
                 if (newValue == true) {
                     angular.element('body').addClass('light');
+                    
 
                 } else {
                     angular.element('body').removeClass('light');
@@ -28,3 +33,4 @@ app.directive( 'bodyClass', function() {
         }
     }
 });
+*/
