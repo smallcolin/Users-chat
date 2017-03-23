@@ -61,11 +61,11 @@ app.directive('autoResize', function($window) {
                 var textarea = element[0].children[2].children[0].children[0].children[0];
                 if (newValue == null || newValue == "") {
                     msg.style.height = "calc(100% - 181px)";
-                    textarea.style.height = "40px";
+                    textarea.style.height = "54px";
                 } else {
                     textarea.style.height = 'auto';
                     textarea.style.height = textarea.scrollHeight + "px";
-                    var newHeight = $window.innerHeight - 145 - textarea.clientHeight;
+                    var newHeight = $window.innerHeight - 129 - textarea.clientHeight;
                     msg.style.height = newHeight + "px";
                 }
             });
