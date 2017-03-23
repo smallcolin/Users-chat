@@ -100,7 +100,7 @@ section.chatSection {
 
 
 .PMSection {
-    padding: 18px 0 10px 10px;
+    padding: 18px 0 5px 10px;
     bottom: 0px;
     background-color: $primaryBgColor;
     textarea {
@@ -109,7 +109,7 @@ section.chatSection {
         width: 100%;
         border-radius: 5px;
         height: 40px;
-        padding: 7px 10px 7px;
+        padding: 7px 40px 7px;
         overflow: hidden;
         word-wrap: break-word;
     }
