@@ -1,23 +1,25 @@
 app.controller('chatSection' , function($scope) {
     $scope.testChat = [
-        {author:'you', image: 'assets/img/you.jpg',status: 'online', message:'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you', image: 'assets/img/jobs.png',status: 'online', message:'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'other', image: 'assets/img/other.jpg',status: 'offline', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
         {author:'other', image: 'assets/img/other.jpg',status: 'offline', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'other', image: 'assets/img/other.jpg',status: 'offline', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
-        {author:'you' , image: 'assets/img/you.jpg',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf ,Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'},
+        {author:'you' , image: 'assets/img/jobs.png',status: 'online', message: 'Lorem ipsum dolor loreoreolerela fakjnfaskfkf'}
     ];
     $scope.send = function(a){
         if (a == null || a == "") {
@@ -25,14 +27,13 @@ app.controller('chatSection' , function($scope) {
         }
         var content = {
             author:'you',
-            image: 'assets/img/you.jpg',
+            image: 'assets/img/jobs.png',
             status: 'online',
             message: a
         };
         $scope.testChat.push(content);
         $scope.content.message = '';
     }
-
 });
 
 app.controller('newsSection' , function($scope) {

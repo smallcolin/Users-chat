@@ -1,108 +1,75 @@
 <!DOCTYPE html>
-<html ng-app="app" lang="en" id="sidebar-html">
+<html lang="en">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body id="sidenav-body" ng-class="{ light: lightTheme }">
-<div id="wrapper-all-content">
-    <div id="sidebar-wrapper">
-        <div class="sidebar-brand">
-            <div class="brand-text-and-logo">
-                <img src="assets/img/unicorn.png" alt="">
-                <span>Users Chat</span>
+<body class="app-login">
+   <div class="container-fluid">
+       <div class="row">
+            <div class="col-xs-12 login-header text-center">
+                <img src="assets/img/unicorn.png">
+                <h1 class="logo">Users chat</h1>
             </div>
-        </div>
-        <div class="sidebar-profile-section">
-            <img src="assets/img/jobs.png" alt="">
-            <div class="profile-text">
-                <span>Sebastian Thorsen</span>
-                <p>@thorsen78</p>
-                <a ui-sref="settingsProfile" class="fa fa-cogs" aria-hidden="true"></a>
+       </div>
+       <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 login-window">
+                <h1>Login now</h1>
+                <h2>Unicorns be waiting</h2>
+                <form class="form-inline" id="login-form">
+                    <div class="form-group">
+                        <label class="sr-only" for="username">Username</label>
+                        <input type="email" class="form-control" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+                    <input type="submit" class="login-button" value="Sign in">
+                </form>
+                <p>Don't have an account?</p>
+                <a href="#" onclick="openRegisterTab()">Create account <span class="caret"></span></a>
+                <div id="app-register">
+                    <h3>So you wanna be a rocket scientist huh?</h3>
+                    <p>Let's see what we can do. We'll need some information first though.</p>
+                    <div class="col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4 text-left">
+                        <form id="register-form">
+                            <div class="form-group">
+                                <label for="regusername">Username</label>
+                                <input type="text" class="form-control" id="regusername" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label for="regemail">Email</label>
+                                <input type="email" class="form-control" id="regemail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="regpassword">Password</label>
+                                <input type="password" class="form-control" id="regpassword" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="regrepeatpassword">Repeat password</label>
+                                <input type="password" class="form-control" id="regrepeatpassword" placeholder="Repeat password">
+                            </div>
+                            <input type="submit" class="register-button" value="Register">
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="sidebar-feed">
-            <section class="sidebar-feed">
-                <article class="sidebar-single-feed">
-                    <a ui-sref="chat">
-                        <img src="assets/img/hash-tag-white-2.png" alt="">
-                        <p>Programming</p>
-                    </a>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>Isak kuk Larsson</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>RealXdMemes</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>Sebbeboi</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>Robin Edbom</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-                <article class="sidebar-single-feed">
-                    <img src="assets/img/jobs.png" alt="">
-                    <p>HaHaa</p>
-                </article>
-            </section>
-        </div>
-        <div class="sidebar-bottom-icons">
-            <a ui-sref="feed"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
-        </div>
-    </div>
-
-    <div id="page-content-wrapper" class="col-md-12">
-        <!--Main content goes here-->
-
-        <ui-view></ui-view>
-    </div>
-</div>
-
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src="dist/all.js"></script>
+       </div>
+   </div>
+   <script>
+   function openRegisterTab() {
+       var appregister = document.getElementById("app-register");
+       if (appregister.style.display === "block") {
+           appregister.style.display = "none";
+       } else {
+           appregister.style.display = "block";
+       }
+   }
+   </script>
 </body>
 </html>

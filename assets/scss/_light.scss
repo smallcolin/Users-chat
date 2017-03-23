@@ -1,9 +1,11 @@
 .light {
-
+    color: black;
     #page-content-wrapper, section.chatSection, section.chatSection .PMSection, section.newsSection, section.profileSection {
         background-color: $secondaryBgColor;
     }
-
+    .profileSection {
+        color: black;
+    }
     #sidebar-wrapper {
         background-color: $secondarySidebarBgColor;
         color: $secondaryTextColor;
@@ -62,27 +64,44 @@
         		box-shadow: 0px 0px 2px 1px #ff5000;
         	}
         }
+    }
+    .PMSection {
+        border-top: solid 2px $secondaryDividerColor;
+        border-bottom: none;
+        background-color: $secondarySidebarBgColor !important;
+        a {
+            color: $secondaryTextColor;
+        }
 
-    	.PMSection {
-    		border-top: solid 2px $secondaryDividerColor;
-    		border-bottom: solid 2px $secondaryDividerColor;
-
-    		a {
-    			color: $secondaryTextColor;
-    		}
-
-    		button {
-    			background-color: transparent;
-    			color: $secondaryAccentColor;
-    		}
-    	}
+        button {
+            background-color: transparent;
+            color: $secondaryAccentColor;
+        }
+    }
+    .form-wrapper {
+        background: $secondarySidebarBgColor;
+        border-top: solid 2px $secondaryDividerColor;
+    }
+    .icon-wrapper {
+        .fa{
+            color: grey;
+        }
+        button {
+            background-color: transparent;
+            color: $primaryAccentColor !important;
+        }
     }
 
     section.newsSection {
-
     	.newsContainer {
     		border-bottom: 2px solid $secondaryDividerColor;
     		border-top: 2px solid $secondaryDividerColor;
+            img {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                margin-left: 5%;
+            }
 
         	img.online {
         		box-shadow: 0px 0px 4px $secondaryUserOnlineColor;
@@ -107,7 +126,6 @@
     }
 
     section.profileSection {
-
         .profileDivider {
             border-bottom: $secondaryDividerColor 2px solid;
         }

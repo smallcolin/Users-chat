@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en" id="sidebar-html">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="sidenav-body" ng-class="{ light: lightTheme }">
+<div id="wrapper-all-content">
+    <div id="sidebar-wrapper">
+        <div class="sidebar-brand">
+            <div class="brand-text-and-logo">
+                <img src="assets/img/unicorn.png" alt="">
+                <span>Users Chat</span>
+            </div>
+        </div>
+        <div class="sidebar-profile-section">
+            <img src="assets/img/jobs.png" alt="">
+            <div class="profile-text">
+                <span>Sebastian Thorsen</span>
+                <p>@thorsen78</p>
+                <a ui-sref="settingsProfile" class="fa fa-cogs" aria-hidden="true"></a>
+            </div>
+        </div>
+        <div id="sidebar-feed">
+            <section class="sidebar-feed">
+                <article class="sidebar-single-feed">
+                    <a ui-sref="chat">
+                        <img src="assets/img/hash-tag-white-2.png" alt="">
+                        <p>Programming</p>
+                    </a>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>Isak kuk Larsson</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>RealXdMemes</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>Sebbeboi</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>Robin Edbom</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+                <article class="sidebar-single-feed">
+                    <img src="assets/img/jobs.png" alt="">
+                    <p>HaHaa</p>
+                </article>
+            </section>
+        </div>
+        <div class="sidebar-bottom-icons">
+            <a ui-sref="feed"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <div id="page-content-wrapper" class="col-md-12">
+        <!--Main content goes here-->
+
+        <ui-view></ui-view>
+    </div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="dist/all.js"></script>
+</body>
+</html>
