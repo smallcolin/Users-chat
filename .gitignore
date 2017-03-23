@@ -5,3 +5,5 @@
 assets/css/style.css
 
 
+*.iml
+.idea/modules.xml
